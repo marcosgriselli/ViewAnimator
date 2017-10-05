@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ViewAnimator_Example' do
+  pod 'ViewAnimator', :path => '../'
+
+  target 'ViewAnimator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
