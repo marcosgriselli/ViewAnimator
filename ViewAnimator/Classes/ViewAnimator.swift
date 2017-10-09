@@ -8,56 +8,96 @@
 import Foundation
 import UIKit
 
-public typealias AnimatorInterval = TimeInterval
+/// Animations completion block
+public typealias CompletionBlock = (()->())
 
+// MARK: - UIView extension with animations.
 public extension UIView {
-    
-    // TODO: - Re-write for to(dir...)
-    
-    private func transformFor(direction: Direction, scale: CGFloat) -> CGAffineTransform? {
-        guard let offset = offsetFor(direction: direction) else { return nil}
-        if direction.isVertical { return CGAffineTransform(translationX: 0, y: offset * scale) }
-        return CGAffineTransform(translationX: offset * scale, y: 0)
-    }
-    
-    //    private func transformTo(direction: Direction, scale: CGFloat) -> CGAffineTransform? {
-    //        guard let offset = offsetFor(direction: direction) else { return nil}
-    //        let arrangedOffset = offset
-    //        if direction.isVertical { return CGAffineTransform(translationX: 0, y: arrangedOffset * scale) }
-    //        return CGAffineTransform(translationX: arrangedOffset * scale, y: 0)
-    //    }
-    
+
+    /// Performs the animation.
+    ///
+    /// - Parameters:
+    ///   - animationType: AnimationType to perform on the animation block.
+    ///   - initialAlpha: Initial alpha of the view prior to the animation.
+    ///   - finalAlpha: View's alpha after the animation.
+    ///   - delay: Time Delay before the animation.
+    ///   - duration: TimeInterval the animation takes to complete.
+    ///   - completion: CompletionBlock after the animation finishes.
     public func animate(animationType: AnimationType,
-                        initialAlpha: CGFloat = 1.0,
-                        finalAlpha: CGFloat = 1.0) {
+                        initialAlpha: CGFloat = 0.0,
+                        finalAlpha: CGFloat = 1.0,
+                        delay: Double = 0,
+                        duration: TimeInterval = ViewAnimatorConfig.duration,
+                        completion: CompletionBlock? = nil) {
         switch animationType {
-        case .from(let direction, let scale):
-            guard let animationTransform = transformFor(direction: direction, scale: scale) else { return }
-            transform = animationTransform
+        case .from(let direction, let offset):
+            transform = transformFor(direction: direction, offset: offset)
         case .zoom(let scale):
             transform = CGAffineTransform(scaleX: scale, y: scale)
         }
         
         alpha = initialAlpha
         
-        UIView.animate(withDuration: 0.3) { [weak self] in
-            self?.transform = CGAffineTransform.identity
-            self?.alpha = finalAlpha
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+            UIView.animate(withDuration: duration, animations: { [weak self] in
+                self?.transform = CGAffineTransform.identity
+                self?.alpha = finalAlpha
+                }, completion: { _ in
+                    completion?()
+            })
         }
     }
-    
-    public func offsetFor(direction: Direction) -> CGFloat? {
+
+    /// Creates the corresponding CGAffineTransform for AnimationType.from.
+    ///
+    /// - Parameters:
+    ///   - direction: Direction option.
+    ///   - offset: Amount of movement to perform.
+    /// - Returns: CGAffineTransform created.
+    private func transformFor(direction: Direction, offset: CGFloat) -> CGAffineTransform {
+        let sign = signFor(direction: direction)
+        if direction.isVertical { return CGAffineTransform(translationX: 0, y: offset * sign) }
+        return CGAffineTransform(translationX: offset * sign, y: 0)
+    }
+
+    /// Direction of the animation using AnimationType.from.
+    ///
+    /// - Parameter direction: Direction option.
+    /// - Returns: Positive o negative value to determine the direction.
+    private func signFor(direction: Direction) -> CGFloat {
         switch direction {
-        case .top:
-            return -(frame.origin.y + bounds.size.height)
-        case .left:
-            return -(frame.origin.x + bounds.size.width)
-        case .right:
-            guard let superview = superview else { return nil }
-            return superview.bounds.size.width - frame.origin.x
-        case .bottom:
-            guard let superview = superview else { return nil }
-            return superview.bounds.size.height - frame.origin.y
+        case .top, .left:
+            return -1
+        case .right, .bottom:
+            return 1
+        }
+    }
+
+    /// Animates all the subviews of the view calling the function.
+    ///
+    /// - Parameters:
+    ///   - animationType: AnimationType to perform.
+    ///   - interval: Interval of the animations between subviews.
+    public func animateAll(animationType: AnimationType,
+                           interval: Double = ViewAnimatorConfig.interval) {
+        for (index, view) in subviews.enumerated() {
+            let delay = Double(index) * interval
+            view.animate(animationType: animationType, delay: delay)
+        }
+    }
+
+    /// Performs random animations on all of the subiews.
+    ///
+    /// - Parameter interval: Interval of the animations between subviews.
+    public func animateRandom(interval: Double = ViewAnimatorConfig.interval) {
+        for (index, view) in subviews.enumerated() {
+            let delay = Double(index) * interval
+            let type = AnimationType.randomAnimation()
+            if let animatable = view as? Animatable {
+                animatable.animateViews(animationType: type, delay: delay)
+            } else {
+                view.animate(animationType: type, delay: delay)
+            }
         }
     }
 }

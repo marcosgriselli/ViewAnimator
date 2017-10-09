@@ -15,6 +15,9 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		85B07AB8CAAAAA417A4A888D /* Pods_ViewAnimator_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA78A58AE09B3C6EAB2E0F5 /* Pods_ViewAnimator_Example.framework */; };
+		FB7FAA701F8BDD2B00B46571 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FAA6F1F8BDD2B00B46571 /* CollectionViewCell.swift */; };
+		FB7FAA721F8BE01E00B46571 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FAA711F8BE01D00B46571 /* TableViewCell.swift */; };
+		FBEDC6621F8B1EEA00BC2A49 /* Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEDC6611F8B1EEA00BC2A49 /* Designable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		ACD712B7095A9DF539CB97D3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C0288BA4824DA606EF78ECED /* Pods-ViewAnimator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewAnimator_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViewAnimator_Tests/Pods-ViewAnimator_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D51DE1497D6B8B24A16A1617 /* Pods_ViewAnimator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewAnimator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7FAA6F1F8BDD2B00B46571 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		FB7FAA711F8BE01D00B46571 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FBEDC6611F8B1EEA00BC2A49 /* Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Designable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +108,11 @@
 		607FACD21AFB9204008FA782 /* Example for ViewAnimator */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				FBEDC65F1F8B1DF400BC2A49 /* Storyboards */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				FBEDC6601F8B1E2600BC2A49 /* ViewControllers */,
+				FBEDC65E1F8B1DE400BC2A49 /* Views */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 			);
 			name = "Example for ViewAnimator";
 			path = ViewAnimator;
@@ -116,6 +121,8 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -157,6 +164,40 @@
 				C0288BA4824DA606EF78ECED /* Pods-ViewAnimator_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB7FAA6E1F8BDD1B00B46571 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FB7FAA6F1F8BDD2B00B46571 /* CollectionViewCell.swift */,
+				FB7FAA711F8BE01D00B46571 /* TableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FBEDC65E1F8B1DE400BC2A49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB7FAA6E1F8BDD1B00B46571 /* Cells */,
+				FBEDC6611F8B1EEA00BC2A49 /* Designable.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FBEDC65F1F8B1DF400BC2A49 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		FBEDC6601F8B1E2600BC2A49 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,8 +413,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7FAA721F8BE01E00B46571 /* TableViewCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				FB7FAA701F8BDD2B00B46571 /* CollectionViewCell.swift in Sources */,
+				FBEDC6621F8B1EEA00BC2A49 /* Designable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,7 +569,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -541,7 +585,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -563,7 +607,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -581,7 +625,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
