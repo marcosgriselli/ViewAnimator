@@ -11,8 +11,7 @@
 [![License](https://img.shields.io/cocoapods/l/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 [![Platform](https://img.shields.io/cocoapods/p/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 
-<img src="https://rawgit.com/marcosgriselli/ViewAnimator/ef6f11d/Resources/feature.svg"/>
-asd
+<img src="./Resources/hero.svg"/>
 
 
 ## Installation
