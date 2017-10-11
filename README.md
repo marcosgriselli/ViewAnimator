@@ -1,15 +1,13 @@
 <!--# ViewAnimator-->
 
-<img src="./Resources/banner.svg" height="55" align="center"/>
+<img src="./Resources/banner.svg" height="150"/>
 
-
-
-**Hero** is a library for building iOS view controller transitions. It provides a declarative layer on top of the UIKit's cumbersome transition APIs. Making custom transitions an easy task for developers.
+**ViewAnimator** is a library for building iOS view animations. It provides a UIView extension which makes adding animations to an entire screen a simple task.
 
 
 [![Version](https://img.shields.io/cocoapods/v/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
-![iOS 9.0+](https://img.shields.io/badge/iOS-8.0%2B-blue.svg?style=flat)
-![Swift 4](https://img.shields.io/badge/Swift-3.0%2B-orange.svg?style=flat)
+![iOS 9+](https://img.shields.io/badge/iOS-9%2B-blue.svg?style=flat)
+![Swift 4](https://img.shields.io/badge/Swift-4-orange.svg?style=flat)
 [![License](https://img.shields.io/cocoapods/l/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 [![Platform](https://img.shields.io/cocoapods/p/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 
@@ -24,7 +22,7 @@ it, simply add the following line to your Podfile:
 pod "ViewAnimator"
 ```
 
-### Swift Package Manager
+<!--### Swift Package Manager-->
 
 
 
