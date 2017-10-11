@@ -1,13 +1,31 @@
 # ViewAnimator
 
+<img src="./Resources/logo.svg" width="200"/>
+
+
 [![CI Status](http://img.shields.io/travis/marcosgriselli@gmail.com/ViewAnimator.svg?style=flat)](https://travis-ci.org/marcosgriselli@gmail.com/ViewAnimator)
 [![Version](https://img.shields.io/cocoapods/v/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 [![License](https://img.shields.io/cocoapods/l/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 [![Platform](https://img.shields.io/cocoapods/p/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 
-## Example
+## Installation
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+### CocoaPods
+
+SwipeableTabBarController is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod "ViewAnimator"
+```
+
+### Swift Package Manager
+
+
+
+### Manual
+
+Drop the swift files inside of [ViewAnimator/Classes](https://github.com/marcosgriselli/ViewAnimator/tree/master/ViewAnimator/Classes) into your project.
 
 ## Project Details
 
@@ -23,7 +41,7 @@ If you use SwipeableTabBarController in your app I'd love to hear about it and f
 
 ### Author
 
-Marcos Griselli | <a href="url"><img src="./Resources/twitterIcon.png" height="15" width="17" ></a> [@marcosgriselli](https://twitter.com/marcosgriselli)
+Marcos Griselli | <a href="url"><img src="https://github.com/marcosgriselli/ViewAnimator/blob/master/Resources/twitterIcon.png" height="15" width="17" ></a> [@marcosgriselli](https://twitter.com/marcosgriselli)
 
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/marcosgriselli.svg?style=social)](https://twitter.com/marcosgriselli)
