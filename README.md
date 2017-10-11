@@ -1,7 +1,8 @@
 <!--# ViewAnimator-->
 
-<img src="./Resources/logo.svg" width="55" align="center"/>
-<img src="./Resources/title.svg" height="50" align="center"/>
+<img src="./Resources/banner.svg" height="55" align="center"/>
+
+
 
 **Hero** is a library for building iOS view controller transitions. It provides a declarative layer on top of the UIKit's cumbersome transition APIs. Making custom transitions an easy task for developers.
 

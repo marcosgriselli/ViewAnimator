@@ -1,0 +1,26 @@
+
+<svg width="1466px" height="192px" viewBox="0 0 1466 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <desc>View Animator banner.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="banner">
+            <g id="appIcon">
+                <rect id="background" fill="#FFFFFF" x="0" y="0" width="192" height="192"></rect>
+                <g id="Table" transform="translate(6.000000, 80.000000)" fill="#DC4E41">
+                    <rect id="cell-one" x="0" y="0" width="181" height="32.3447684" rx="5"></rect>
+                    <rect id="cell-two" fill-opacity="0.65" x="0" y="37.3927959" width="181" height="32.3447684" rx="5"></rect>
+                    <rect id="cell-three" fill-opacity="0.4" x="0" y="76.6552316" width="181" height="32.3447684" rx="5"></rect>
+                </g>
+                <g id="Collection" transform="translate(0.000000, 15.000000)" fill="#4A90E2">
+                    <rect id="item-one" opacity="0.3" x="0" y="0" width="48.9375" height="49" rx="5"></rect>
+                    <rect id="item-two" opacity="0.599014946" x="58.3125" y="0" width="48.9375" height="49" rx="5"></rect>
+                    <rect id="item-three" opacity="0.8" x="114.75" y="0" width="48.9375" height="49" rx="5"></rect>
+                    <rect id="item-four" x="169.3125" y="0" width="22.6875" height="49" rx="5"></rect>
+                </g>
+            </g>
+            <text id="View-Animator" font-family="BrushScriptStd, Brush Script Std" font-size="200" font-style="italic" font-weight="400" letter-spacing="2.41176391" fill="#1860B3">
+                <tspan x="236" y="163">View Animator</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
