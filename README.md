@@ -1,10 +1,14 @@
-# ViewAnimator
+<!--# ViewAnimator-->
 
-<img src="./Resources/logo.svg" width="200"/>
+<img src="./Resources/logo.svg" width="55" align="center"/>
+<img src="./Resources/title.svg" height="50" align="center"/>
+
+**Hero** is a library for building iOS view controller transitions. It provides a declarative layer on top of the UIKit's cumbersome transition APIs. Making custom transitions an easy task for developers.
 
 
-[![CI Status](http://img.shields.io/travis/marcosgriselli@gmail.com/ViewAnimator.svg?style=flat)](https://travis-ci.org/marcosgriselli@gmail.com/ViewAnimator)
 [![Version](https://img.shields.io/cocoapods/v/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
+![iOS 9.0+](https://img.shields.io/badge/iOS-8.0%2B-blue.svg?style=flat)
+![Swift 4](https://img.shields.io/badge/Swift-3.0%2B-orange.svg?style=flat)
 [![License](https://img.shields.io/cocoapods/l/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 [![Platform](https://img.shields.io/cocoapods/p/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 
@@ -41,7 +45,7 @@ If you use SwipeableTabBarController in your app I'd love to hear about it and f
 
 ### Author
 
-Marcos Griselli | <a href="url"><img src="https://github.com/marcosgriselli/ViewAnimator/blob/master/Resources/twitterIcon.png" height="15" width="17" ></a> [@marcosgriselli](https://twitter.com/marcosgriselli)
+Marcos Griselli | <a href="url"><img src="./Resources/twitterLogo.svg" height="17"></a> [@marcosgriselli](https://twitter.com/marcosgriselli)
 
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/marcosgriselli.svg?style=social)](https://twitter.com/marcosgriselli)
