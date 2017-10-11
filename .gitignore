@@ -33,3 +33,6 @@ Carthage
 # `pod install` in .travis.yml
 #
 # Pods/
+
+# Scripts
+push.sh

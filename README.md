@@ -11,6 +11,9 @@
 [![License](https://img.shields.io/cocoapods/l/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 [![Platform](https://img.shields.io/cocoapods/p/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 
+<img src="./Resources/feature.svg" height="100"/>
+
+
 ## Installation
 
 ### CocoaPods
