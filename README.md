@@ -11,8 +11,9 @@
 [![License](https://img.shields.io/cocoapods/l/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 [![Platform](https://img.shields.io/cocoapods/p/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 
-<img src="./Resources/feature.svg"/>
-
+<img src="./Resources/horizontal.svg"/>
+<img src="./Resources/vertical.svg"/>
+<img src="./Resources/iphoneX.svg" width="120"/>
 
 ## Installation
 
