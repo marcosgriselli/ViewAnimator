@@ -1,6 +1,6 @@
 <!--# ViewAnimator-->
 
-<img src="./Resources/banner.svg" height="150"/>
+<img src="https://cdn.rawgit.com/marcosgriselli/ViewAnimator/cf065e96/Resources/banner.svg" height="150"/>
 
 **ViewAnimator** is a library for building complex iOS UIView animations in an easy way. It provides one line animations for any view included the ones which contain other views like UITableView and UICollectionView with it's cells or UIStackView with it's arrangedSubviews.
 
@@ -12,15 +12,15 @@
 [![Platform](https://img.shields.io/cocoapods/p/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 
 ### Entire View
-<img src="./Resources/entireView.svg"/>
+<img src="https://cdn.rawgit.com/marcosgriselli/ViewAnimator/cf065e96/Resources/entireView.svg"/>
 
 ### UITableView
-<img src="./Resources/horizontal.svg"/>&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="./Resources/vertical.svg"/>
+<img src="https://cdn.rawgit.com/marcosgriselli/ViewAnimator/cf065e96/Resources/horizontal.svg"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.rawgit.com/marcosgriselli/ViewAnimator/cf065e96/Resources/vertical.svg"/>
 
 ### UICollectionView
-<img src="./Resources/collection.svg"/>&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="./Resources/collectionX.svg"/>
+<img src="https://cdn.rawgit.com/marcosgriselli/ViewAnimator/cf065e96/Resources/collection.svg"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.rawgit.com/marcosgriselli/ViewAnimator/cf065e96/Resources/collectionX.svg"/>
 
 SVG animations inspired by [Luke Zhao's](http://lkzhao.com) project [Hero](https://github.com/lkzhao/Hero/blob/master/README.md)
 
@@ -108,7 +108,7 @@ If you use ViewAnimator in your app I'd love to hear about it and feature your a
 
 ### Author
 
-Marcos Griselli | <a href="url"><img src="./Resources/twitterLogo.svg" height="17"></a> [@marcosgriselli](https://twitter.com/marcosgriselli)
+Marcos Griselli | <a href="url"><img src="https://cdn.rawgit.com/marcosgriselli/ViewAnimator/cf065e96/Resources/twitterLogo.svg" height="17"></a> [@marcosgriselli](https://twitter.com/marcosgriselli)
 
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/marcosgriselli.svg?style=social)](https://twitter.com/marcosgriselli)
