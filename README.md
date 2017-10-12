@@ -9,7 +9,7 @@
 ![iOS 9+](https://img.shields.io/badge/iOS-9%2B-blue.svg?style=flat)
 ![Swift 4](https://img.shields.io/badge/Swift-4-orange.svg?style=flat)
 [![License](https://img.shields.io/cocoapods/l/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
-[![Platform](https://img.shields.io/cocoapods/p/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
+[![codebeat badge](https://codebeat.co/badges/633fb33d-66b6-4034-93c0-0f52c5d0e15c)](https://codebeat.co/projects/github-com-marcosgriselli-viewanimator-master)
 
 ### Entire View
 <img src="https://cdn.rawgit.com/marcosgriselli/ViewAnimator/cf065e96/Resources/entireView.svg"/>
