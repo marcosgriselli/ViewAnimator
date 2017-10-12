@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ViewAnimator'
-  s.version          = '0.1.0'
-  s.summary          = 'One liner complete view animations.'
+  s.version          = '1.0.0'
+  s.summary          = 'ViewAnimator brings your UI to life with just one line.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -19,6 +19,8 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
     ViewAnimator helps create beautifull animations of an entire UI with only one line of code.
+    It also supports UITableView/UICollectionView and UIStackView animation of cells and arrangedSubviews
+    with delightful interactions.
                        DESC
 
   s.homepage         = 'https://github.com/marcosgriselli/ViewAnimator'

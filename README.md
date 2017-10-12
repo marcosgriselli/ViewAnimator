@@ -11,6 +11,9 @@
 [![License](https://img.shields.io/cocoapods/l/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 [![Platform](https://img.shields.io/cocoapods/p/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 
+### Entire View
+<img src="./Resources/entireView.svg"/>
+
 ### UITableView
 <img src="./Resources/horizontal.svg"/>&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="./Resources/vertical.svg"/>
@@ -21,8 +24,8 @@
 
 SVG animations inspired by [Luke Zhao's](http://lkzhao.com) project [Hero](https://github.com/lkzhao/Hero/blob/master/README.md)
 
-### Any View
-<image src="https://cdn.dribbble.com/users/702789/screenshots/3816087/preview-messaki.gif"/>
+### Complex Layouts
+<image src="https://cdn.dribbble.com/users/702789/screenshots/3816087/preview-messaki.gif" width="400"/>
 
 Any View UI gif was created by [Messaki](https://dribbble.com/messaki), make sure to check out his profile.
 
@@ -44,6 +47,52 @@ pod "ViewAnimator"
 ### Manual
 
 Drop the swift files inside of [ViewAnimator/Classes](https://github.com/marcosgriselli/ViewAnimator/tree/master/ViewAnimator/Classes) into your project.
+
+## Usage
+
+`ViewAnimator` provides a set of `UIView` extensions to easily add custom animations to your views.
+
+### AnimationType
+
+#### Direction
+`Direction` provides the axis where the animation should take place and it's movement direction.
+
+```swift
+let type = AnimationType.from(direction: .top, offset: 30.0)
+view.animate(animationType: type)
+```
+
+#### Zoom
+Zoom in and Zoom out animation support.
+
+```swift
+let type = AnimationType.zoom(scale: 0.5)
+view.animate(animationType: type)
+```
+
+### Animatable
+
+`UITableView`, `UICollectionView` and `UIStackView` conform to `Animatable` protocol. This lets us animate their visible subviews or cells with only one function. 
+
+```swift
+func animateViews(animationType: AnimationType,
+                      initialAlpha: CGFloat,
+                      finalAlpha: CGFloat,
+                      delay: Double,
+                      duration: TimeInterval,
+                      animationInterval: TimeInterval,
+                      completion: CompletionBlock?)
+```
+
+All of this parameters have default values except AnimationType. They can be modified globaly with `ViewAnimatorConfig` static properties.
+
+### Random Animations
+If you are just trying to see how `ViewAnimator` can fit in your project and don't want to spend any time reading at docs or testing the animations just call `view.animateRandom()` on your `UIViewController` and you'll get a set of random animations for your subviews. UITableViews/UICollectionViews and UIStackViews will have their visible views animated individually with the same animation but with a delay between each view.
+
+```swift 
+view.animateRandom()
+```
+
 
 ## Project Details
 
