@@ -2,7 +2,7 @@
 
 <img src="./Resources/banner.svg" height="150"/>
 
-**ViewAnimator** is a library for building iOS view animations. It provides a UIView extension which makes adding animations to an entire screen a simple task.
+**ViewAnimator** is a library for building complex iOS UIView animations in an easy way. It provides one line animations for any view included the ones which contain other views like UITableView and UICollectionView with it's cells or UIStackView with it's arrangedSubviews.
 
 
 [![Version](https://img.shields.io/cocoapods/v/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
@@ -18,6 +18,13 @@
 ### UICollectionView
 <img src="./Resources/collection.svg"/>&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="./Resources/collectionX.svg"/>
+
+SVG animations inspired by [Luke Zhao's](http://lkzhao.com) project [Hero](https://github.com/lkzhao/Hero/blob/master/README.md)
+
+### Any View
+<image src="https://cdn.dribbble.com/users/702789/screenshots/3816087/preview-messaki.gif"/>
+
+Any View UI gif was created by [Messaki](https://dribbble.com/messaki), make sure to check out his profile.
 
 ## Installation
 
