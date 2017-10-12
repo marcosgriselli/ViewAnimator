@@ -15,7 +15,7 @@
     <animate
         attributeName="x"
         values="5;15;15;5;5"
-        dur="2s"
+        dur="3s"
         keyTimes="0;0.15;0.5;0.65;1"
         calcMode="spline"
         keySplines="0.4,0,0.2,1;0.4,0,0.2,1;0.4,0,0.2,1;0.4,0,0.2,1"
@@ -25,7 +25,7 @@
    <animate
         attributeName="opacity"
         values="0;1;1;0;0"
-        dur="2s"
+        dur="3s"
         keyTimes="0;0.15;0.5;0.65;1"
         calcMode="spline"
         begin="0.0s"
@@ -37,7 +37,7 @@
     <animate
         attributeName="x"
         values="5;15;15;5;5"
-        dur="2s"
+        dur="3s"
         keyTimes="0;0.15;0.5;0.65;1"
         calcMode="spline"
         keySplines="0.4,0,0.2,1;0.4,0,0.2,1;0.4,0,0.2,1;0.4,0,0.2,1"
@@ -47,7 +47,7 @@
    <animate
         attributeName="opacity"
         values="0;1;1;0;0"
-        dur="2s"
+        dur="3s"
         keyTimes="0;0.15;0.5;0.65;1"
         calcMode="spline"
         begin="0.05s"
@@ -59,7 +59,7 @@
     <animate
         attributeName="x"
         values="5;15;15;5;5"
-        dur="2s"
+        dur="3s"
         keyTimes="0;0.15;0.5;0.65;1"
         calcMode="spline"
         keySplines="0.4,0,0.2,1;0.4,0,0.2,1;0.4,0,0.2,1;0.4,0,0.2,1"
@@ -69,7 +69,7 @@
    <animate
         attributeName="opacity"
         values="0;1;1;0;0"
-        dur="2s"
+        dur="3s"
         keyTimes="0;0.15;0.5;0.65;1"
         calcMode="spline"
         begin="0.1s"
@@ -81,7 +81,7 @@
     <animate
         attributeName="x"
         values="5;15;15;5;5"
-        dur="2s"
+        dur="3s"
         keyTimes="0;0.15;0.5;0.65;1"
         calcMode="spline"
         keySplines="0.4,0,0.2,1;0.4,0,0.2,1;0.4,0,0.2,1;0.4,0,0.2,1"
@@ -91,7 +91,7 @@
    <animate
         attributeName="opacity"
         values="0;1;1;0;0"
-        dur="2s"
+        dur="3s"
         keyTimes="0;0.15;0.5;0.65;1"
         calcMode="spline"
         begin="0.15s"
@@ -103,7 +103,7 @@
     <animate
         attributeName="x"
         values="5;15;15;5;5"
-        dur="2s"
+        dur="3s"
         keyTimes="0;0.15;0.5;0.65;1"
         calcMode="spline"
         keySplines="0.4,0,0.2,1;0.4,0,0.2,1;0.4,0,0.2,1;0.4,0,0.2,1"
@@ -113,7 +113,7 @@
    <animate
         attributeName="opacity"
         values="0;1;1;0;0"
-        dur="2s"
+        dur="3s"
         keyTimes="0;0.15;0.5;0.65;1"
         calcMode="spline"
         begin="0.2s"

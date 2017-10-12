@@ -27,13 +27,13 @@ SVG animations inspired by [Luke Zhao's](http://lkzhao.com) project [Hero](https
 ### Complex Layouts
 <image src="https://cdn.dribbble.com/users/702789/screenshots/3816087/preview-messaki.gif" width="400"/>
 
-Any View UI gif was created by [Messaki](https://dribbble.com/messaki), make sure to check out his profile.
+UI created by [Messaki](https://dribbble.com/messaki), make sure to check out his profile.
 
 ## Installation
 
 ### CocoaPods
 
-SwipeableTabBarController is available through [CocoaPods](http://cocoapods.org). To install
+ViewAnimator is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
@@ -104,7 +104,7 @@ view.animateRandom()
 ### Contributing
 Feel free to collaborate with ideas 💭, issues ⁉️ and/or pull requests 🔃.
 
-If you use SwipeableTabBarController in your app I'd love to hear about it and feature your animation here!
+If you use ViewAnimator in your app I'd love to hear about it and feature your animation here!
 
 ### Author
 
