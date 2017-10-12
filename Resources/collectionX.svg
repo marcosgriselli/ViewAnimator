@@ -107,17 +107,16 @@
                 </g>
                 <g id="cell5" transform="translate(0.000000, 148.000000)">
                     <rect id="rectangle" x="0" y="0" width="42" height="46" rx="4">
-                    <animateTransform attributeName="transform" 
-                            type="scale"
-                            additive="sum" 
-                            values="0.5 0.5;1 1;1 1;0.5 0.5;0.5 0.5"
-                            dur="2s"
-                            keyTimes="0;0.15;0.5;0.65;1"
-                            calcMode="spline"
-                            begin="0.25s"
-                            keySplines="0.4,0,0.2,1;0.4,0,0.2,1;0.4,0,0.2,1;0.4,0,0.2,1"
-                            repeatCount="indefinite"
-                            fill="freeze" />
+                    <animate 
+                        attributeName="x" 
+                        values="10;0;0;10;10" 
+                        dur="3s"
+                        keyTimes="0;0.15;0.5;0.65;1"
+                        calcMode="spline"
+                        keySplines="0.4,0,0.2,1;0.4,0,0.2,1;0.4,0,0.2,1;0.4,0,0.2,1"
+                        begin="0.4s"
+                        repeatCount="indefinite"
+                        fill="freeze" />
                     <animate 
                         attributeName="opacity" 
                         values="0;1;1;0;0" 
