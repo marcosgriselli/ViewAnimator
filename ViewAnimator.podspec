@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ViewAnimator'
   s.version          = '1.0.0'
-  s.summary          = 'ViewAnimator brings your UI to life with just one line.'
+  s.summary          = 'ViewAnimator brings your UI to life with just one line of code.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
