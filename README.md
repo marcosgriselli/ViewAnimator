@@ -2,7 +2,7 @@
 
 <img src="https://cdn.rawgit.com/marcosgriselli/ViewAnimator/cf065e96/Resources/banner.svg" height="150"/>
 
-**ViewAnimator** is a library for building complex iOS UIView animations in an easy way. It provides one line animations for any view included the ones which contain other views like UITableView and UICollectionView with it's cells or UIStackView with it's arrangedSubviews.
+**ViewAnimator** is a library for building complex iOS UIView animations in an easy way. It provides one line animations for any view included the ones which contain other views like UITableView and UICollectionView with its cells or UIStackView with its arrangedSubviews.
 
 
 [![Version](https://img.shields.io/cocoapods/v/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
