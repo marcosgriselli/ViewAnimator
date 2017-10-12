@@ -11,9 +11,13 @@
 [![License](https://img.shields.io/cocoapods/l/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 [![Platform](https://img.shields.io/cocoapods/p/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 
-<img src="./Resources/horizontal.svg"/>
+### UITableView
+<img src="./Resources/horizontal.svg"/>&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="./Resources/vertical.svg"/>
-<img src="./Resources/iphoneX.svg" width="120"/>
+
+### UICollectionView
+<img src="./Resources/collection.svg"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="./Resources/collectionX.svg"/>
 
 ## Installation
 
