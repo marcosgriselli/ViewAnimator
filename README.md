@@ -100,7 +100,7 @@ view.animateRandom()
 
 ### Requirements
 * Swift 4.0
-* Xcode 8.0+
+* Xcode 9.0+
 * iOS 9.0+
 
 ### Contributing
