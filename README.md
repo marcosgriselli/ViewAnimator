@@ -1,4 +1,4 @@
-<img src="./Resources/banner.svg" height="80"/>
+<img src="https://cdn.rawgit.com/marcosgriselli/ViewAnimator/3c78b078/Resources/banner.svg" height="80"/>
 
 **ViewAnimator** is a library for building complex iOS UIView animations in an easy way. It provides one line animations for any view included the ones which contain other views like UITableView and UICollectionView with its cells or UIStackView with its arrangedSubviews.
 
@@ -86,6 +86,14 @@ If you are just trying to see how `ViewAnimator` can fit in your project and don
 ```swift 
 view.animateRandom()
 ```
+
+## TODO
+
+- [ ] Add Carthage support.
+- [ ] Add SPM support.
+- [ ] Create protocols for the animation types.
+- [ ] Add more use cases to the example app.
+- [ ] Add autohide functionality.
 
 
 ## Project Details
