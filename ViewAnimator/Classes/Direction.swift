@@ -25,6 +25,19 @@ public enum Direction: Int {
         }
     }
 
+    /// Direction of the animation using AnimationType.from.
+    ///
+    /// - Parameter direction: Direction option.
+    /// - Returns: Positive o negative value to determine the direction.
+    var sign: CGFloat {
+        switch self {
+        case .top, .left:
+            return -1
+        case .right, .bottom:
+            return 1
+        }
+    }
+
     /// Random direction.
     static func random() -> Direction {
         let rawValue = Int(arc4random_uniform(4))

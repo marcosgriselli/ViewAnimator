@@ -1,9 +1,9 @@
 {
   "name": "ViewAnimator",
-  "version": "0.1.0",
-  "summary": "A short description of ViewAnimator.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/marcosgriselli@gmail.com/ViewAnimator",
+  "version": "1.0.0",
+  "summary": "ViewAnimator brings your UI to life with just one line of code.",
+  "description": "ViewAnimator helps create beautifull animations of an entire UI with only one line of code.\nIt also supports UITableView/UICollectionView and UIStackView animation of cells and arrangedSubviews\nwith delightful interactions.",
+  "homepage": "https://github.com/marcosgriselli/ViewAnimator",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,12 @@
     "marcosgriselli@gmail.com": "marcosgriselli@gmail.com"
   },
   "source": {
-    "git": "https://github.com/marcosgriselli@gmail.com/ViewAnimator.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/marcosgriselli/ViewAnimator.git",
+    "tag": "1.0.0"
   },
+  "social_media_url": "https://twitter.com/marcosgriselli",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "ViewAnimator/Classes/**/*"
 }

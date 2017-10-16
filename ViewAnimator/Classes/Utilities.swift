@@ -36,3 +36,21 @@ public extension Double {
         return Double.random * (max - min) + min
     }
 }
+
+extension CGFloat {
+
+    /// Returns a random floating point number between 0.0 and 1.0, inclusive.
+    public static var random: CGFloat {
+        return CGFloat(arc4random()) / 0xFFFFFFFF
+    }
+
+    /// Generates a random CGFloat.
+    ///
+    /// - Parameters:
+    ///   - min: Minimum value of the random value.
+    ///   - max: Maximum value of the random value.
+    /// - Returns: Generated value.
+    public static func random(min: CGFloat, max: CGFloat) -> CGFloat {
+        return CGFloat.random * (max - min) + min
+    }
+}

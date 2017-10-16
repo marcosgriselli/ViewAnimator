@@ -29,7 +29,7 @@ public protocol Animatable {
     ///   - duration: TimeInterval the animation takes to complete.
     ///   - animationInterval: TimeInterval between each of the subviews animations.
     ///   - completion: CompletionBlock after the animation finishes.
-    func animateViews(animationType: AnimationType,
+    func animateViews(animation: Animation,
                       initialAlpha: CGFloat,
                       finalAlpha: CGFloat,
                       delay: Double,
@@ -44,7 +44,7 @@ public extension Animatable {
         views.forEach { $0.alpha = initialAlpha }
     }
     
-    public func animateViews(animationType: AnimationType,
+    public func animateViews(animation: Animation,
                              initialAlpha: CGFloat = 0.0,
                              finalAlpha: CGFloat = 1.0,
                              delay: Double = 0.0,
@@ -54,7 +54,7 @@ public extension Animatable {
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
             for (index, view) in self.views.enumerated() {
                 view.alpha = initialAlpha
-                view.animate(animationType: animationType,
+                view.animate(animation: animation,
                              initialAlpha: initialAlpha,
                              finalAlpha: finalAlpha,
                              delay: Double(index) * animationInterval,
