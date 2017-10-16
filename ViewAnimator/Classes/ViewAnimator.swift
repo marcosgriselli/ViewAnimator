@@ -17,13 +17,13 @@ public extension UIView {
     /// Performs the animation.
     ///
     /// - Parameters:
-    ///   - animationType: AnimationType to perform on the animation block.
+    ///   - animations: Array of Animations to perform on the animation block.
     ///   - initialAlpha: Initial alpha of the view prior to the animation.
     ///   - finalAlpha: View's alpha after the animation.
     ///   - delay: Time Delay before the animation.
     ///   - duration: TimeInterval the animation takes to complete.
     ///   - completion: CompletionBlock after the animation finishes.
-    public func animate(animation: Animation,
+    public func animate(animations: [Animation],
                         initialAlpha: CGFloat = 0.0,
                         finalAlpha: CGFloat = 1.0,
                         delay: Double = 0,
@@ -31,7 +31,7 @@ public extension UIView {
                         completion: CompletionBlock? = nil) {
         
         // Apply initial transform and alpha
-        transform = animation.initialTransform
+        animations.forEach { transform = transform.concatenating($0.initialTransform) }
         alpha = initialAlpha
         
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
@@ -49,11 +49,11 @@ public extension UIView {
     /// - Parameters:
     ///   - animationType: AnimationType to perform.
     ///   - interval: Interval of the animations between subviews.
-    public func animateAll(animation: Animation,
+    public func animateAll(animations: [Animation],
                            interval: Double = ViewAnimatorConfig.interval) {
         for (index, view) in subviews.enumerated() {
             let delay = Double(index) * interval
-            view.animate(animation: animation, delay: delay)
+            view.animate(animations: animations, delay: delay)
         }
     }
 
@@ -66,9 +66,9 @@ public extension UIView {
             let delay = Double(index) * interval
             let animation = AnimationType.random()
             if let animatable = view as? Animatable {
-                animatable.animateViews(animation: animation, delay: delay)
+                animatable.animateViews(animations: [animation], delay: delay)
             } else {
-                view.animate(animation: animation, delay: delay)
+                view.animate(animations: [animation], delay: delay)
             }
         }
     }
