@@ -89,9 +89,10 @@ view.animateRandom()
 
 ## TODO
 
+- [ ] Create protocol for the animations.
+- [ ] Support combining animations.
 - [ ] Add Carthage support.
 - [ ] Add SPM support.
-- [ ] Create protocols for the animation types.
 - [ ] Add more use cases to the example app.
 - [ ] Add autohide functionality.
 
