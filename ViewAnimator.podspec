@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-    ViewAnimator helps create beautifull animations of an entire UI with only one line of code.
+    ViewAnimator helps create beautiful animations of an entire UI with only one line of code.
     It also supports UITableView/UICollectionView and UIStackView animation of cells and arrangedSubviews
     with delightful interactions.
                        DESC
