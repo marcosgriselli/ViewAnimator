@@ -52,16 +52,16 @@ Drop the swift files inside of [ViewAnimator/Classes](https://github.com/marcosg
 `Direction` provides the axis where the animation should take place and it's movement direction.
 
 ```swift
-let type = AnimationType.from(direction: .top, offset: 30.0)
-view.animate(animationType: type)
+let animation = AnimationType.from(direction: .top, offset: 30.0)
+view.animate(animations: [animation])
 ```
 
 #### Zoom
 Zoom in and Zoom out animation support.
 
 ```swift
-let type = AnimationType.zoom(scale: 0.5)
-view.animate(animationType: type)
+let animation = AnimationType.zoom(scale: 0.5)
+view.animate(animations: [animation])
 ```
 
 ### Animatable
@@ -69,13 +69,13 @@ view.animate(animationType: type)
 `UITableView`, `UICollectionView` and `UIStackView` conform to `Animatable` protocol. This lets us animate their visible subviews or cells with only one function. 
 
 ```swift
-func animateViews(animationType: AnimationType,
-                      initialAlpha: CGFloat,
-                      finalAlpha: CGFloat,
-                      delay: Double,
-                      duration: TimeInterval,
-                      animationInterval: TimeInterval,
-                      completion: CompletionBlock?)
+func animateViews(animations: [Animation],
+                  initialAlpha: CGFloat,
+                  finalAlpha: CGFloat,
+                  delay: Double,
+                  duration: TimeInterval,
+                  animationInterval: TimeInterval,
+                  completion: CompletionBlock?)
 ```
 
 All of this parameters have default values except AnimationType. They can be modified globaly with `ViewAnimatorConfig` static properties.
@@ -87,10 +87,33 @@ If you are just trying to see how `ViewAnimator` can fit in your project and don
 view.animateRandom()
 ```
 
+### Combined Animations
+
+You can combine conformances of `Animation` to apply multiple transforms on your animation block. 
+
+```swift 
+        let fromAnimation = AnimationType.from(direction: .right, offset: 30.0)
+        let zoomAnimation = AnimationType.zoom(scale: 0.2)
+        let rotateAnimation = AnimationType.rotate(angle: CGFloat.pi/6)
+        collectionView.animateViews(animations: [zoomAnimation, rotateAnimation], duration: 0.5)
+        tableView.animateViews(animations: [fromAnimation, zoomAnimation], duration: 0.5)
+
+```
+
+## Animation
+
+`Animation` protocol provides you the posibility of expanding the animations supported by `ViewAnimator` with exception of the `animateRandom` function.
+
+```swift 
+public protocol Animation {
+    var initialTransform: CGAffineTransform { get }
+}
+```
+
 ## TODO
 
-- [ ] Create protocol for the animations.
-- [ ] Support combining animations.
+- [x] Create protocol for the animations.
+- [x] Support combining animations.
 - [ ] Add Carthage support.
 - [ ] Add SPM support.
 - [ ] Add more use cases to the example app.

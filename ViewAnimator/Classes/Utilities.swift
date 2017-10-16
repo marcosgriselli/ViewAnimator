@@ -37,11 +37,21 @@ public extension Double {
     }
 }
 
+// MARK: Float Extension
+
+public extension Float {
+    
+    /// Returns a random floating point number between 0.0 and 1.0, inclusive.
+    public static var random: Float {
+        return Float(arc4random()) / 0xFFFFFFFF
+    }
+}
+
 extension CGFloat {
 
     /// Returns a random floating point number between 0.0 and 1.0, inclusive.
     public static var random: CGFloat {
-        return CGFloat(arc4random()) / 0xFFFFFFFF
+        return CGFloat(Float.random)
     }
 
     /// Generates a random CGFloat.
