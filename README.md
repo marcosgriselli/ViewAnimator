@@ -81,7 +81,7 @@ func animateViews(animations: [Animation],
 All of this parameters have default values except AnimationType. They can be modified globaly with `ViewAnimatorConfig` static properties.
 
 ### Random Animations
-If you are just trying to see how `ViewAnimator` can fit in your project and don't want to spend any time reading at docs or testing the animations just call `view.animateRandom()` on your `UIViewController` and you'll get a set of random animations for your subviews. UITableViews/UICollectionViews and UIStackViews will have their visible views animated individually with the same animation but with a delay between each view.
+If you are just trying to see how `ViewAnimator` can fit in your project and don't want to spend any time reading the docs or testing the animations, just call `view.animateRandom()` on your `UIViewController` and you'll get a set of random animations for your subviews. UITableViews/UICollectionViews and UIStackViews will have their visible views animated individually with the same animation but with a delay between each view.
 
 ```swift 
 view.animateRandom()
