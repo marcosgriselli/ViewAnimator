@@ -34,6 +34,23 @@ it, simply add the following line to your Podfile:
 pod "ViewAnimator"
 ```
 
+### Carthage
+
+You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+
+```bash
+$ brew update
+$ brew install carthage
+```
+
+To integrate ViewAnimator into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+git "hamzaansari09/ViewAnimator" "1.0.2"
+```
+
+Run `carthage update` to build the framework and drag the built `Alamofire.framework` into your Xcode project.
+
 <!--### Swift Package Manager-->
 
 

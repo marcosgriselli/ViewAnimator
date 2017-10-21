@@ -15,6 +15,9 @@
 		6A29FF1B1F9B65C400858E7F /* ViewAnimatorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A29FF141F9B65C400858E7F /* ViewAnimatorConfig.swift */; };
 		6A29FF1C1F9B65C400858E7F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A29FF151F9B65C400858E7F /* Utilities.swift */; };
 		6A29FF211F9B660800858E7F /* ViewAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A29FF1E1F9B65D800858E7F /* ViewAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A29FF4F1F9B703E00858E7F /* CODE_OF_CONDUCT.md in Resources */ = {isa = PBXBuildFile; fileRef = 6A29FF4C1F9B703E00858E7F /* CODE_OF_CONDUCT.md */; };
+		6A29FF501F9B703E00858E7F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6A29FF4D1F9B703E00858E7F /* README.md */; };
+		6A29FF511F9B703E00858E7F /* ISSUE_TEMPLATE.md in Resources */ = {isa = PBXBuildFile; fileRef = 6A29FF4E1F9B703E00858E7F /* ISSUE_TEMPLATE.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		6A29FF151F9B65C400858E7F /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = ViewAnimator/Classes/Utilities.swift; sourceTree = SOURCE_ROOT; };
 		6A29FF1D1F9B65D800858E7F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ViewAnimator/Info.plist; sourceTree = SOURCE_ROOT; };
 		6A29FF1E1F9B65D800858E7F /* ViewAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewAnimator.h; path = ViewAnimator/ViewAnimator.h; sourceTree = SOURCE_ROOT; };
+		6A29FF4C1F9B703E00858E7F /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		6A29FF4D1F9B703E00858E7F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6A29FF4E1F9B703E00858E7F /* ISSUE_TEMPLATE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ISSUE_TEMPLATE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				6A29FEF51F9B482F00858E7F /* Deployment */,
+				6A29FF4B1F9B701700858E7F /* Documentation */,
 				6A29FEDC1F9B47F900858E7F /* Source */,
 				6A29FEDB1F9B47F900858E7F /* Products */,
 			);
@@ -66,7 +73,7 @@
 				6A29FEFC1F9B4F4100858E7F /* Classes */,
 				6A29FEFA1F9B4EE400858E7F /* Supporting Files */,
 			);
-			path = Source;
+			name = Source;
 			sourceTree = "<group>";
 		};
 		6A29FEF51F9B482F00858E7F /* Deployment */ = {
@@ -99,6 +106,16 @@
 				6A29FF141F9B65C400858E7F /* ViewAnimatorConfig.swift */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		6A29FF4B1F9B701700858E7F /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				6A29FF4C1F9B703E00858E7F /* CODE_OF_CONDUCT.md */,
+				6A29FF4E1F9B703E00858E7F /* ISSUE_TEMPLATE.md */,
+				6A29FF4D1F9B703E00858E7F /* README.md */,
+			);
+			name = Documentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +189,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A29FF501F9B703E00858E7F /* README.md in Resources */,
+				6A29FF4F1F9B703E00858E7F /* CODE_OF_CONDUCT.md in Resources */,
+				6A29FF511F9B703E00858E7F /* ISSUE_TEMPLATE.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
