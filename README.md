@@ -49,7 +49,7 @@ To integrate ViewAnimator into your Xcode project using Carthage, specify it in 
 git "hamzaansari09/ViewAnimator" "1.0.2"
 ```
 
-Run `carthage update` to build the framework and drag the built `Alamofire.framework` into your Xcode project.
+Run `carthage update` to build the framework and drag the built `ViewAnimator.framework` into your Xcode project.
 
 <!--### Swift Package Manager-->
 
