@@ -91,6 +91,7 @@ extension UICollectionView: Animatable {
 }
 
 // MARK: - UIStackView
+@available(iOS 9, *)
 extension UIStackView: Animatable {
 
     public var views: [UIView] {
