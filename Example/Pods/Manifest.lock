@@ -1,5 +1,5 @@
 PODS:
-  - ViewAnimator (1.0.0)
+  - ViewAnimator (1.0.2)
 
 DEPENDENCIES:
   - ViewAnimator (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ViewAnimator: ea1096d29eb09e979fc9db11a724238c0f624172
+  ViewAnimator: b9ae3a2e40bb080d106a97c5b2d4adf0d58fd649
 
 PODFILE CHECKSUM: a987aaf63ce791b62b0692a3a9da361b037a7f98
 
