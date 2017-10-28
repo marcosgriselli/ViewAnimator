@@ -81,7 +81,7 @@ func animateViews(animations: [Animation],
 All of this parameters have default values except AnimationType. They can be modified globaly with `ViewAnimatorConfig` static properties.
 
 ### Random Animations
-If you are just trying to see how `ViewAnimator` can fit in your project and don't want to spend any time reading at docs or testing the animations just call `view.animateRandom()` on your `UIViewController` and you'll get a set of random animations for your subviews. UITableViews/UICollectionViews and UIStackViews will have their visible views animated individually with the same animation but with a delay between each view.
+If you are just trying to see how `ViewAnimator` can fit in your project and don't want to spend any time reading the docs or testing the animations just call `view.animateRandom()` on your `UIViewController` and you'll get a set of random animations for your subviews. UITableViews/UICollectionViews and UIStackViews will have their visible views animated individually with the same animation but with a delay between each view.
 
 ```swift 
 view.animateRandom()
@@ -92,11 +92,11 @@ view.animateRandom()
 You can combine conformances of `Animation` to apply multiple transforms on your animation block. 
 
 ```swift 
-        let fromAnimation = AnimationType.from(direction: .right, offset: 30.0)
-        let zoomAnimation = AnimationType.zoom(scale: 0.2)
-        let rotateAnimation = AnimationType.rotate(angle: CGFloat.pi/6)
-        collectionView.animateViews(animations: [zoomAnimation, rotateAnimation], duration: 0.5)
-        tableView.animateViews(animations: [fromAnimation, zoomAnimation], duration: 0.5)
+let fromAnimation = AnimationType.from(direction: .right, offset: 30.0)
+let zoomAnimation = AnimationType.zoom(scale: 0.2)
+let rotateAnimation = AnimationType.rotate(angle: CGFloat.pi/6)
+collectionView.animateViews(animations: [zoomAnimation, rotateAnimation], duration: 0.5)
+tableView.animateViews(animations: [fromAnimation, zoomAnimation], duration: 0.5)
 
 ```
 
@@ -118,6 +118,12 @@ public protocol Animation {
 - [ ] Add SPM support.
 - [ ] Add more use cases to the example app.
 - [ ] Add autohide functionality.
+
+## Mentions
+
+- [iOS Dev Weekly 323](http://iosdevweekly.com/issues/323#start)
+- [Natasha The Robot's Newsleter 147](https://swiftnews.curated.co/issues/147#start)
+- [Top 10 Swift Articles October](https://medium.mybridge.co/swift-top-10-articles-for-the-past-month-v-oct-2017-4e0f1bd031e8)
 
 
 ## Project Details
