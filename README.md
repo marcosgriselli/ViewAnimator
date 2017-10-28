@@ -4,7 +4,7 @@
 
 
 [![Version](https://img.shields.io/cocoapods/v/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
-![iOS 9+](https://img.shields.io/badge/iOS-9%2B-blue.svg?style=flat)
+![iOS 8+](https://img.shields.io/badge/iOS-8%2B-blue.svg?style=flat)
 ![Swift 4](https://img.shields.io/badge/Swift-4-orange.svg?style=flat)
 [![License](https://img.shields.io/cocoapods/l/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
 [![codebeat badge](https://codebeat.co/badges/633fb33d-66b6-4034-93c0-0f52c5d0e15c)](https://codebeat.co/projects/github-com-marcosgriselli-viewanimator-master)
@@ -130,8 +130,8 @@ public protocol Animation {
 
 ### Requirements
 * Swift 4.0
-* Xcode 9.0+
-* iOS 9.0+
+* Xcode 7.0+
+* iOS 8.0+
 
 ### Contributing
 Feel free to collaborate with ideas 💭, issues ⁉️ and/or pull requests 🔃.
