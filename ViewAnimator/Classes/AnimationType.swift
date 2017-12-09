@@ -11,6 +11,7 @@ import Foundation
 ///
 /// - from: Animation with direction and distance.
 /// - zoom: Zoom animation.
+/// - rotate: Rotation animation.
 public enum AnimationType: Animation {
 
     case from(direction: Direction, offset: CGFloat)
@@ -31,9 +32,9 @@ public enum AnimationType: Animation {
         }
     }
     
-    /// Generates a random AnimationType.
+    /// Generates a random Animation.
     ///
-    /// - Returns: Newly generated random AnimationType.
+    /// - Returns: Newly generated random Animation.
     public static func random() -> Animation {
         let index = Int(arc4random_uniform(3))
         if index == 1 {

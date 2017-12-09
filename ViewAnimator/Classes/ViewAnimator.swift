@@ -63,7 +63,7 @@ public extension UIView {
     /// Animates all the subviews of the view calling the function.
     ///
     /// - Parameters:
-    ///   - animationType: AnimationType to perform.
+    ///   - animations: Animations to perform.
     ///   - interval: Interval of the animations between subviews.
     public func animateAll(animations: [Animation],
                            interval: Double = ViewAnimatorConfig.interval) {
