@@ -25,10 +25,7 @@ public enum Direction: Int {
         }
     }
 
-    /// Direction of the animation using AnimationType.from.
-    ///
-    /// - Parameter direction: Direction option.
-    /// - Returns: Positive o negative value to determine the direction.
+    /// Positive or negative value to determine the direction.
     var sign: CGFloat {
         switch self {
         case .top, .left:
