@@ -13,19 +13,6 @@ public typealias CompletionBlock = (()->())
 
 // MARK: - UIView extension with animations.
 public extension UIView {
-    
-    var preTransform: CGAffineTransform? {
-        get {
-            return objc_getAssociatedObject(self,
-                                            &ViewAnimatorConstants.preTransformKey) as? CGAffineTransform
-        }
-        set {
-            objc_setAssociatedObject(self,
-                                     &ViewAnimatorConstants.preTransformKey,
-                                     newValue,
-                                     .OBJC_ASSOCIATION_RETAIN)
-        }
-    }
 
     /// Performs the animation.
     ///
@@ -43,16 +30,17 @@ public extension UIView {
                         duration: TimeInterval = ViewAnimatorConfig.duration,
                         completion: CompletionBlock? = nil) {
         
+        let preTransform = transform
+        
         // Apply transforms and alpha
         animations.forEach {
-            preTransform = transform
             transform = transform.concatenating($0.initialTransform)
         }
         alpha = initialAlpha
         
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
             UIView.animate(withDuration: duration, animations: { [weak self] in
-                self?.transform = self?.preTransform ?? CGAffineTransform.identity
+                self?.transform = preTransform
                 self?.alpha = finalAlpha
                 }, completion: { _ in
                     completion?()
