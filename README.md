@@ -114,7 +114,7 @@ public protocol Animation {
 
 - [x] Create protocol for the animations.
 - [x] Support combining animations.
-- [ ] Add Carthage support.
+- [x] Add Carthage support.
 - [ ] Add SPM support.
 - [ ] Add more use cases to the example app.
 - [ ] Add autohide functionality.
