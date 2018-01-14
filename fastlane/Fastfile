@@ -1,0 +1,18 @@
+default_platform(:ios)
+
+platform :ios do
+
+  desc "Release a new version of the pod"
+  lane :release do
+    pod_lib_lint
+    version = version_bump_podspec(path: "ViewAnimator.podspec", bump_type: "patch")
+    git_add(path: "./ViewAnimator.podspec")
+    git_commit(path: ["./ViewAnimator.podspec"], message: "#{version} release")
+    add_git_tag(
+  		tag: "#{version}"
+	)
+    push_git_tags
+    push_to_git_remote
+    pod_push
+  end
+end
