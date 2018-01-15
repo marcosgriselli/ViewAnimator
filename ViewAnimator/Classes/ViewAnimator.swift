@@ -18,29 +18,32 @@ public extension UIView {
     ///
     /// - Parameters:
     ///   - animations: Array of Animations to perform on the animation block.
+    ///   - reversed: Initial state of the animation. Reversed will start from its original position.
     ///   - initialAlpha: Initial alpha of the view prior to the animation.
     ///   - finalAlpha: View's alpha after the animation.
     ///   - delay: Time Delay before the animation.
     ///   - duration: TimeInterval the animation takes to complete.
     ///   - completion: CompletionBlock after the animation finishes.
     public func animate(animations: [Animation],
+                        reversed: Bool = false,
                         initialAlpha: CGFloat = 0.0,
                         finalAlpha: CGFloat = 1.0,
                         delay: Double = 0,
                         duration: TimeInterval = ViewAnimatorConfig.duration,
                         completion: CompletionBlock? = nil) {
         
-        let preTransform = transform
-        
-        // Apply transforms and alpha
-        animations.forEach {
-            transform = transform.concatenating($0.initialTransform)
+        let transformFrom = transform
+        var transformTo = transform
+        animations.forEach { transformTo = transformTo.concatenating($0.initialTransform) }
+        if !reversed {
+            transform = transformTo
         }
+
         alpha = initialAlpha
         
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
             UIView.animate(withDuration: duration, animations: { [weak self] in
-                self?.transform = preTransform
+                self?.transform = reversed ? transformTo : transformFrom
                 self?.alpha = finalAlpha
                 }, completion: { _ in
                     completion?()

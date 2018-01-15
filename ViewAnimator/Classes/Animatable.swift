@@ -13,16 +13,11 @@ public protocol Animatable {
     /// Views to be animated.
     var views: [UIView] { get }
     
-    /// Prepare views before the animation. Only use it if you are planing on animating
-    /// both, the parent view and it's child views on different animations.
-    ///
-    /// - Parameter initialAlpha: Starting alpha value of it's views.
-    func prepareViews(initialAlpha: CGFloat)
-    
     /// Performs the animation.
     ///
     /// - Parameters:
     ///   - animations: Animations array to perform on the animation block.
+    ///   - reversed: Initial state of the animation. Reversed will start from its original position.
     ///   - initialAlpha: Initial alpha of the view prior to the animation.
     ///   - finalAlpha: View's alpha after the animation.
     ///   - delay: Time Delay before the animation.
@@ -30,38 +25,63 @@ public protocol Animatable {
     ///   - animationInterval: TimeInterval between each of the subviews animations.
     ///   - completion: CompletionBlock after the animation finishes.
     func animateViews(animations: [Animation],
+                      reversed: Bool,
                       initialAlpha: CGFloat,
                       finalAlpha: CGFloat,
                       delay: Double,
                       duration: TimeInterval,
                       animationInterval: TimeInterval,
                       completion: CompletionBlock?)
+    
+    /// Resets the views to their identity state.
+    /// Needed when you use mismatched animations.
+    /// Example: backand forth reversed/non-reversed zoom with different scales.
+    func restoreViewsToIdentity()
 }
 
 public extension Animatable {
     
-    public func prepareViews(initialAlpha: CGFloat = 0) {
+    private func prepareViews(initialAlpha: CGFloat = 0) {
         views.forEach { $0.alpha = initialAlpha }
     }
     
     public func animateViews(animations: [Animation],
+                             reversed: Bool = false,
                              initialAlpha: CGFloat = 0.0,
                              finalAlpha: CGFloat = 1.0,
                              delay: Double = 0.0,
                              duration: TimeInterval = 0.3,
                              animationInterval: TimeInterval = 0.05,
                              completion: CompletionBlock? = nil) {
+        
+        guard views.count > 0 else {
+            completion?()
+            return
+        }
+
+        prepareViews(initialAlpha: initialAlpha)
+        let dispatchGroup = DispatchGroup()
+        for _ in 1...views.count { dispatchGroup.enter() }
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
             for (index, view) in self.views.enumerated() {
                 view.alpha = initialAlpha
                 view.animate(animations: animations,
+                             reversed: reversed,
                              initialAlpha: initialAlpha,
                              finalAlpha: finalAlpha,
                              delay: Double(index) * animationInterval,
                              duration: duration,
-                             completion: completion)
+                             completion: { dispatchGroup.leave() })
             }
         }
+        
+        dispatchGroup.notify(queue: .main) {
+            completion?()
+        }
+    }
+    
+    func restoreViewsToIdentity() {
+        views.forEach { $0.transform = CGAffineTransform.identity } 
     }
 }
 
