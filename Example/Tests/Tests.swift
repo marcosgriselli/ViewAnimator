@@ -32,5 +32,25 @@ class Tests: XCTestCase {
         waitForExpectations(timeout: 1.0, handler: nil)
     }
     
+    func testTransformOnReverse() {
+        let view = UIView()
+        
+        let rotate = AnimationType.rotate(angle: CGFloat.pi)
+        let translate = AnimationType.from(direction: .right, offset: 20)
+        let animations = [rotate, translate]
+        
+        var expectedTransform = view.transform
+        animations.forEach { expectedTransform = expectedTransform.concatenating($0.initialTransform) }
+        
+        let animationCompleteExpectation = expectation(description: "Animate with multiple transforms")
+        
+        view.animate(animations: animations, reversed: true) {
+            animationCompleteExpectation.fulfill()
+            XCTAssert(view.transform == expectedTransform)
+        }
+        
+        waitForExpectations(timeout: 1.0, handler: nil)
+    }
+    
 }
 
