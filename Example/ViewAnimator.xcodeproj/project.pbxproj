@@ -17,6 +17,7 @@
 		85B07AB8CAAAAA417A4A888D /* Pods_ViewAnimator_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA78A58AE09B3C6EAB2E0F5 /* Pods_ViewAnimator_Example.framework */; };
 		FB7FAA701F8BDD2B00B46571 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FAA6F1F8BDD2B00B46571 /* CollectionViewCell.swift */; };
 		FB7FAA721F8BE01E00B46571 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FAA711F8BE01D00B46571 /* TableViewCell.swift */; };
+		FBB74CD520277D8E007DA94F /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB74CD420277D8E007DA94F /* CollectionViewController.swift */; };
 		FBD2D4A9200C1EB800C3785B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2D4A8200C1EB800C3785B /* TableViewController.swift */; };
 		FBEDC6621F8B1EEA00BC2A49 /* Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEDC6611F8B1EEA00BC2A49 /* Designable.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		D51DE1497D6B8B24A16A1617 /* Pods_ViewAnimator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewAnimator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7FAA6F1F8BDD2B00B46571 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		FB7FAA711F8BE01D00B46571 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FBB74CD420277D8E007DA94F /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		FBD2D4A8200C1EB800C3785B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		FBEDC6611F8B1EEA00BC2A49 /* Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Designable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +201,7 @@
 			children = (
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				FBD2D4A8200C1EB800C3785B /* TableViewController.swift */,
+				FBB74CD420277D8E007DA94F /* CollectionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				FBD2D4A9200C1EB800C3785B /* TableViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				FBB74CD520277D8E007DA94F /* CollectionViewController.swift in Sources */,
 				FB7FAA701F8BDD2B00B46571 /* CollectionViewCell.swift in Sources */,
 				FBEDC6621F8B1EEA00BC2A49 /* Designable.swift in Sources */,
 			);

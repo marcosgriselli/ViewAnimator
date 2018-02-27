@@ -13,6 +13,7 @@ class TableViewController: UITableViewController {
 
     private var items = [Any?]()
     private let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+    private let animations = [AnimationType.from(direction: .bottom, offset: 30.0)]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,16 +48,14 @@ class TableViewController: UITableViewController {
         activityIndicator.stopAnimating()
         items = Array(repeating: nil, count: 20)
         tableView.reloadData()
-        tableView.animateViews(animations: [AnimationType.from(direction: .bottom, offset: 30.0)],
-                               completion: {
+        tableView.animateViews(animations: animations, completion: {
             sender.isEnabled = true
         })
     }
 
     @IBAction func resetTapped(_ sender: UIBarButtonItem) {
         items.removeAll()
-        let animation = AnimationType.from(direction: .bottom, offset: 30.0)
-        tableView.animateViews(animations: [animation], reversed: true, initialAlpha: 1.0, finalAlpha: 0.0,
+        tableView.animateViews(animations: animations, reversed: true, initialAlpha: 1.0, finalAlpha: 0.0,
                                completion: {
                                 self.tableView.restoreViewsToIdentity()
                                 self.tableView.reloadData()

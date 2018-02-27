@@ -61,8 +61,8 @@ public extension Animatable {
 
         prepareViews(initialAlpha: initialAlpha)
         let dispatchGroup = DispatchGroup()
+        for _ in 1...self.views.count { dispatchGroup.enter() }
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
-            for _ in 1...self.views.count { dispatchGroup.enter() }
             for (index, view) in self.views.enumerated() {
                 view.alpha = initialAlpha
                 view.animate(animations: animations,
