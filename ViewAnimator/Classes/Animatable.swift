@@ -54,6 +54,8 @@ public extension Animatable {
                              animationInterval: TimeInterval = 0.05,
                              completion: CompletionBlock? = nil) {
         
+        let views = self.views
+        
         guard views.count > 0 else {
             completion?()
             return
@@ -61,9 +63,9 @@ public extension Animatable {
 
         prepareViews(initialAlpha: initialAlpha)
         let dispatchGroup = DispatchGroup()
-        for _ in 1...self.views.count { dispatchGroup.enter() }
+        for _ in 1...views.count { dispatchGroup.enter() }
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
-            for (index, view) in self.views.enumerated() {
+            for (index, view) in views.enumerated() {
                 view.alpha = initialAlpha
                 view.animate(animations: animations,
                              reversed: reversed,
