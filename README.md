@@ -49,7 +49,7 @@ Drop the swift files inside of [ViewAnimator/Classes](https://github.com/marcosg
 ### AnimationType
 
 #### Direction
-`Direction` provides the axis where the animation should take place and it's movement direction.
+`Direction` provides the axis where the animation should take place and its movement direction.
 
 ```swift
 let animation = AnimationType.from(direction: .top, offset: 30.0)
