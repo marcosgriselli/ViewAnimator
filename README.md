@@ -110,15 +110,6 @@ public protocol Animation {
 }
 ```
 
-## TODO
-
-- [x] Create protocol for the animations.
-- [x] Support combining animations.
-- [x] Add Carthage support.
-- [ ] Add SPM support.
-- [ ] Add more use cases to the example app.
-- [ ] Add autohide functionality.
-
 ## Mentions
 
 - [iOS Dev Weekly 323](http://iosdevweekly.com/issues/323#start)
