@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/marcosgriselli'
 
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'ViewAnimator/Classes/**/*'
+  s.swift_version = '4.1'
 
 end
