@@ -30,20 +30,23 @@ class CollectionViewController: UIViewController {
         items = Array(repeating: nil, count: 20)
         collectionView?.reloadData()
         collectionView?.performBatchUpdates({
-            self.collectionView?.animateViews(animations: animations,
-                                              completion: {
-                                                sender.isEnabled = true
-            })
+            UIView.animate(views: self.collectionView!.visibleCells,
+                animations: animations, completion: {
+                sender.isEnabled = true
+                })
         }, completion: nil)
     }
     
     @IBAction func resetTapped(_ sender: UIBarButtonItem) {
         items.removeAll()
-        collectionView?.animateViews(animations: animations, reversed: true, initialAlpha: 1.0, finalAlpha: 0.0,
-                                     completion: {
-                                        self.collectionView?.restoreViewsToIdentity()
-                                        self.collectionView?.reloadData()
-                                        self.activityIndicator.startAnimating()
+        UIView.animate(views: collectionView!.visibleCells,
+                       animations: animations, reversed: true,
+                       initialAlpha: 1.0,
+                       finalAlpha: 0.0,
+                       completion: {
+//                        self.collectionView?.restoreViewsToIdentity()
+                        self.collectionView?.reloadData()
+                        self.activityIndicator.startAnimating()
         })
     }
 }

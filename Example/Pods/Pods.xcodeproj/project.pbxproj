@@ -16,13 +16,14 @@
 		61FA5E9C77CC95A46BECD8A321D28F15 /* Pods-ViewAnimator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF69D024E9D0F75F9310C2B4EBF259A /* Pods-ViewAnimator_Example-dummy.m */; };
 		79DAFD8AECD0F236DF0952048D56D18F /* ViewAnimator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 934F09F6C623E683628F4C9E83FC0FBD /* ViewAnimator-dummy.m */; };
 		85346F06761FF0B13F1CB8CCB5BD9ACE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		857E8FC73ABC625A8EC1CA49B1B15E03 /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB368A2553621D8BF7B087747481CAFE /* Animatable.swift */; };
 		96ABAE590B3473804D86437F694A9268 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		9B1B3F1DDDEBF44E63D4C20E69D10F6D /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7EBE186307F448982E410A942AD678 /* AnimationType.swift */; };
 		AB431CE42236537619CD107AB5313349 /* Pods-ViewAnimator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D407133794E8E0670445AE782663C989 /* Pods-ViewAnimator_Tests-dummy.m */; };
 		BC45C53407A0F0A8A53F2FC65616A74B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0089B049ABE84CF1C23A5E13D5FD6D /* Utilities.swift */; };
 		E7E0633998F60B029A002A2455C51565 /* Pods-ViewAnimator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A992E0149E1E3248DAF604E406E0EB6 /* Pods-ViewAnimator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC9ED1322A6E4B2367946DF8924C6178 /* ViewAnimator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55827FE2EA7732EECA9BC3910539E81C /* ViewAnimator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB8A8B21208434E0004CC1CA /* UICollectionView + ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8A8B20208434E0004CC1CA /* UICollectionView + ViewAnimator.swift */; };
+		FB8A8B232084360D004CC1CA /* UITableView + ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8A8B222084360D004CC1CA /* UITableView + ViewAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,12 +48,12 @@
 		3680DE72D928CFBDAD9506ADE057A858 /* ViewAnimatorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewAnimatorConfig.swift; path = ViewAnimator/Classes/ViewAnimatorConfig.swift; sourceTree = "<group>"; };
 		3993F1EF303202DBC95818EA9BAEF5DE /* Pods-ViewAnimator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ViewAnimator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3CF69D024E9D0F75F9310C2B4EBF259A /* Pods-ViewAnimator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ViewAnimator_Example-dummy.m"; sourceTree = "<group>"; };
-		3D0089B049ABE84CF1C23A5E13D5FD6D /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = ViewAnimator/Classes/Utilities.swift; sourceTree = "<group>"; };
+		3D0089B049ABE84CF1C23A5E13D5FD6D /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		4A10F0DDA5236D2522C3651DDFB27F25 /* Pods-ViewAnimator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ViewAnimator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4A992E0149E1E3248DAF604E406E0EB6 /* Pods-ViewAnimator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ViewAnimator_Example-umbrella.h"; sourceTree = "<group>"; };
 		4BA6E05FC4E4002047C449B5AC007273 /* Pods-ViewAnimator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ViewAnimator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		55827FE2EA7732EECA9BC3910539E81C /* ViewAnimator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ViewAnimator-umbrella.h"; sourceTree = "<group>"; };
-		601735AFDC7FB074A91979338E1C976D /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = ViewAnimator/Classes/Animation.swift; sourceTree = "<group>"; };
+		601735AFDC7FB074A91979338E1C976D /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		676870F2991B8DDC9913382CCEBE8CC8 /* Pods-ViewAnimator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ViewAnimator_Example.modulemap"; sourceTree = "<group>"; };
 		6DE544EBE3EDC421D686564B5E3795E0 /* Pods_ViewAnimator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewAnimator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,15 +65,16 @@
 		94B05D863031B34F5F459B68B76F0B59 /* Pods-ViewAnimator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ViewAnimator_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		94F2017753DC8443E0E517EAB1136A3B /* Pods-ViewAnimator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ViewAnimator_Example-frameworks.sh"; sourceTree = "<group>"; };
 		976ED52363EC48C864D68EC3E9FEA947 /* Pods-ViewAnimator_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ViewAnimator_Tests.modulemap"; sourceTree = "<group>"; };
-		990980D36525B65DE494AA5110CA0248 /* Direction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Direction.swift; path = ViewAnimator/Classes/Direction.swift; sourceTree = "<group>"; };
+		990980D36525B65DE494AA5110CA0248 /* Direction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		AC11955CF56334D14A3F3D68DD76AC0E /* Pods-ViewAnimator_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ViewAnimator_Tests-resources.sh"; sourceTree = "<group>"; };
 		AD4BB98BD13485B462519DC24B76A762 /* ViewAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60000507C9C407C5665E26D9CE24D63 /* ViewAnimator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ViewAnimator.xcconfig; sourceTree = "<group>"; };
 		B685C36568FA656EEFA21E11F1E26EED /* Pods-ViewAnimator_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ViewAnimator_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BE7EBE186307F448982E410A942AD678 /* AnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationType.swift; path = ViewAnimator/Classes/AnimationType.swift; sourceTree = "<group>"; };
+		BE7EBE186307F448982E410A942AD678 /* AnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimationType.swift; sourceTree = "<group>"; };
 		CAC73B3C3FA3CDC2D08E70EDC5400F07 /* Pods-ViewAnimator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ViewAnimator_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D407133794E8E0670445AE782663C989 /* Pods-ViewAnimator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ViewAnimator_Tests-dummy.m"; sourceTree = "<group>"; };
-		EB368A2553621D8BF7B087747481CAFE /* Animatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animatable.swift; path = ViewAnimator/Classes/Animatable.swift; sourceTree = "<group>"; };
+		FB8A8B20208434E0004CC1CA /* UICollectionView + ViewAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + ViewAnimator.swift"; sourceTree = "<group>"; };
+		FB8A8B222084360D004CC1CA /* UITableView + ViewAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView + ViewAnimator.swift"; sourceTree = "<group>"; };
 		FFDEA22E49A0B61E0415DBBD4B33F94D /* Pods_ViewAnimator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewAnimator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -197,11 +199,10 @@
 		F484E37150314D0D31DD981E589A6D6B /* ViewAnimator */ = {
 			isa = PBXGroup;
 			children = (
-				EB368A2553621D8BF7B087747481CAFE /* Animatable.swift */,
-				601735AFDC7FB074A91979338E1C976D /* Animation.swift */,
-				BE7EBE186307F448982E410A942AD678 /* AnimationType.swift */,
-				990980D36525B65DE494AA5110CA0248 /* Direction.swift */,
-				3D0089B049ABE84CF1C23A5E13D5FD6D /* Utilities.swift */,
+				FB8A8B24208438DB004CC1CA /* Extensions */,
+				FB8A8B25208438EB004CC1CA /* Models */,
+				FB8A8B262084390A004CC1CA /* Protocols */,
+				FB8A8B2720843930004CC1CA /* Utilities */,
 				3332DF07AF635F1CF4E62DC80DCC8D71 /* ViewAnimator.swift */,
 				3680DE72D928CFBDAD9506ADE057A858 /* ViewAnimatorConfig.swift */,
 				FB2E517F8494662DED7FD35ACBC7C656 /* Support Files */,
@@ -222,6 +223,44 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ViewAnimator";
+			sourceTree = "<group>";
+		};
+		FB8A8B24208438DB004CC1CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FB8A8B20208434E0004CC1CA /* UICollectionView + ViewAnimator.swift */,
+				FB8A8B222084360D004CC1CA /* UITableView + ViewAnimator.swift */,
+			);
+			name = Extensions;
+			path = ViewAnimator/Classes/Extensions;
+			sourceTree = "<group>";
+		};
+		FB8A8B25208438EB004CC1CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE7EBE186307F448982E410A942AD678 /* AnimationType.swift */,
+				990980D36525B65DE494AA5110CA0248 /* Direction.swift */,
+			);
+			name = Models;
+			path = ViewAnimator/Classes/Models;
+			sourceTree = "<group>";
+		};
+		FB8A8B262084390A004CC1CA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				601735AFDC7FB074A91979338E1C976D /* Animation.swift */,
+			);
+			name = Protocols;
+			path = ViewAnimator/Classes/Protocols;
+			sourceTree = "<group>";
+		};
+		FB8A8B2720843930004CC1CA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3D0089B049ABE84CF1C23A5E13D5FD6D /* Utilities.swift */,
+			);
+			name = Utilities;
+			path = ViewAnimator/Classes/Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,7 +352,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -355,11 +394,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				857E8FC73ABC625A8EC1CA49B1B15E03 /* Animatable.swift in Sources */,
 				06FDB8885535A6C8AFE10DE081396018 /* Animation.swift in Sources */,
+				FB8A8B21208434E0004CC1CA /* UICollectionView + ViewAnimator.swift in Sources */,
 				9B1B3F1DDDEBF44E63D4C20E69D10F6D /* AnimationType.swift in Sources */,
 				3BD11D59C9C42FA8C2D350162B940940 /* Direction.swift in Sources */,
 				BC45C53407A0F0A8A53F2FC65616A74B /* Utilities.swift in Sources */,
+				FB8A8B232084360D004CC1CA /* UITableView + ViewAnimator.swift in Sources */,
 				79DAFD8AECD0F236DF0952048D56D18F /* ViewAnimator-dummy.m in Sources */,
 				4B6B02FF40CFFF5A3AA8D8A9C92706F2 /* ViewAnimator.swift in Sources */,
 				20D534ABB3D8AC86DB61A415D10C7136 /* ViewAnimatorConfig.swift in Sources */,
@@ -461,23 +501,33 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -545,22 +595,32 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -574,6 +634,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
