@@ -55,7 +55,8 @@ class TableViewController: UITableViewController {
 
     @IBAction func resetTapped(_ sender: UIBarButtonItem) {
         items.removeAll()
-        UIView.animate(views: tableView.visibleCells, animations: animations, initialAlpha: 1.0, finalAlpha: 0.0, completion: {
+        UIView.animate(views: tableView.visibleCells, animations: animations, reversed: true,
+                       initialAlpha: 1.0, finalAlpha: 0.0, completion: {
             //                                self.tableView.restoreViewsToIdentity()
             self.tableView.reloadData()
             self.activityIndicator.startAnimating()
