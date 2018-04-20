@@ -27,6 +27,7 @@ public extension UIView {
                         finalAlpha: CGFloat = 1.0,
                         delay: Double = 0,
                         duration: TimeInterval = ViewAnimatorConfig.duration,
+                        options: UIViewAnimationOptions = [],
                         completion: (() -> Void)? = nil) {
         
         let transformFrom = transform
@@ -38,13 +39,11 @@ public extension UIView {
 
         alpha = initialAlpha
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
-            UIView.animate(withDuration: duration, animations: { [weak self] in
-                self?.transform = reversed ? transformTo : transformFrom
-                self?.alpha = finalAlpha
-                }, completion: { _ in
-                    completion?()
-            })
+        UIView.animate(withDuration: duration, delay: delay, options: options, animations: { [weak self] in
+            self?.transform = reversed ? transformTo : transformFrom
+            self?.alpha = finalAlpha
+        }) { _ in
+            completion?()
         }
     }
     
@@ -67,6 +66,7 @@ public extension UIView {
                                delay: Double = 0,
                                animationInterval: TimeInterval = 0.05,
                                duration: TimeInterval = ViewAnimatorConfig.duration,
+                               options: UIViewAnimationOptions = [],
                                completion: (() -> Void)? = nil) {
 
         guard views.count > 0 else {
@@ -86,6 +86,7 @@ public extension UIView {
                              finalAlpha: finalAlpha,
                              delay: Double(index) * animationInterval,
                              duration: duration,
+                             options: options,
                              completion: { dispatchGroup.leave() })
             }
         }
