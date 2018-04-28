@@ -5,7 +5,9 @@ target 'ViewAnimator_Example' do
 
   target 'ViewAnimator_Tests' do
     inherit! :search_paths
-
-    
   end
+end
+
+target 'ViewAnimatorTVOS' do
+    pod 'ViewAnimator', :path => '../'
 end

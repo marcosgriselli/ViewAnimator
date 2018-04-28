@@ -1,0 +1,6 @@
+framework module ViewAnimator {
+  umbrella header "ViewAnimator-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

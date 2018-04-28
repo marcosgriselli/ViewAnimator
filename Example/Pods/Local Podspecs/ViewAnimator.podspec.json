@@ -1,6 +1,6 @@
 {
   "name": "ViewAnimator",
-  "version": "1.0.2",
+  "version": "2.0.1",
   "summary": "ViewAnimator brings your UI to life with just one line of code.",
   "description": "ViewAnimator helps create beautiful animations of an entire UI with only one line of code.\nIt also supports UITableView/UICollectionView and UIStackView animation of cells and arrangedSubviews\nwith delightful interactions.",
   "homepage": "https://github.com/marcosgriselli/ViewAnimator",
@@ -13,11 +13,13 @@
   },
   "source": {
     "git": "https://github.com/marcosgriselli/ViewAnimator.git",
-    "tag": "1.0.2"
+    "tag": "2.0.1"
   },
   "social_media_url": "https://twitter.com/marcosgriselli",
   "platforms": {
-    "ios": "8.0"
+    "ios": "8.0",
+    "tvos": "9.0"
   },
-  "source_files": "ViewAnimator/Classes/**/*"
+  "source_files": "ViewAnimator/Classes/**/*",
+  "swift_version": "4.1"
 }
