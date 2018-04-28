@@ -1,5 +1,5 @@
 framework module ViewAnimator {
-  umbrella header "ViewAnimator-umbrella.h"
+  umbrella header "ViewAnimator-tvOS-umbrella.h"
 
   export *
   module * { export * }

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ViewAnimatorTVOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="w3O-QV-i5a">
+                                <rect key="frame" x="928" y="508" width="64" height="64"/>
+                            </activityIndicatorView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="A8I-2m-uwu">
+                                <rect key="frame" x="90" y="140" width="1740" height="880"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="35" minimumInteritemSpacing="20" id="DqQ-mU-qpl">
+                                    <size key="itemSize" width="317" height="469"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="rtR-FU-f8w" customClass="CollectionViewCell" customModule="ViewAnimatorTVOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="317" height="469"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="317" height="469"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aTv-Ym-PfV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="317" height="469"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="aTv-Ym-PfV" firstAttribute="leading" secondItem="rtR-FU-f8w" secondAttribute="leading" id="FHc-Nn-o3t"/>
+                                            <constraint firstAttribute="trailing" secondItem="aTv-Ym-PfV" secondAttribute="trailing" id="Tpu-pE-uam"/>
+                                            <constraint firstAttribute="bottom" secondItem="aTv-Ym-PfV" secondAttribute="bottom" id="lgQ-6y-x1d"/>
+                                            <constraint firstItem="aTv-Ym-PfV" firstAttribute="top" secondItem="rtR-FU-f8w" secondAttribute="top" id="sua-EK-fZd"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="aTv-Ym-PfV" id="7Zg-FW-0Ke"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="FAG-Z7-0DC">
+                                <rect key="frame" x="1356" y="20" width="474" height="86"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rao-BY-zni">
+                                        <rect key="frame" x="0.0" y="0.0" width="222" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Animate"/>
+                                        <connections>
+                                            <action selector="animateTapped:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="7ve-hy-QyX"/>
+                                            <action selector="animateTapped:" destination="j2R-Dg-AjY" eventType="primaryActionTriggered" id="Mab-RH-eJp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POQ-8y-bL6">
+                                        <rect key="frame" x="252" y="0.0" width="222" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Reset"/>
+                                        <connections>
+                                            <action selector="resetTapped:" destination="j2R-Dg-AjY" eventType="primaryActionTriggered" id="AZ3-UW-Whf"/>
+                                            <action selector="resetTapped:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="fcC-cd-5Rf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="A8I-2m-uwu" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" constant="80" id="38R-gM-W4O"/>
+                            <constraint firstItem="w3O-QV-i5a" firstAttribute="centerY" secondItem="wu6-TO-1qx" secondAttribute="centerY" id="4F1-4y-dpP"/>
+                            <constraint firstItem="w3O-QV-i5a" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="6za-sj-bgQ"/>
+                            <constraint firstItem="FAG-Z7-0DC" firstAttribute="trailing" secondItem="wu6-TO-1qx" secondAttribute="trailing" id="Anj-PG-GmF"/>
+                            <constraint firstItem="FAG-Z7-0DC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-40" id="Dhi-PR-nxr"/>
+                            <constraint firstItem="A8I-2m-uwu" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" id="PfP-VP-hes"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="bottom" secondItem="A8I-2m-uwu" secondAttribute="bottom" id="lPI-UC-pLa"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="A8I-2m-uwu" secondAttribute="trailing" id="q9R-Mq-hCG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="w3O-QV-i5a" id="AlH-1e-gQB"/>
+                        <outlet property="collectionView" destination="A8I-2m-uwu" id="dHa-nT-MJh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="j2R-Dg-AjY" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
