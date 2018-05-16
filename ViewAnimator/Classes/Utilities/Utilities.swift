@@ -5,7 +5,7 @@
 //  Created by Marcos Griselli on 10/7/17.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - Bool
 extension Bool {

@@ -5,7 +5,7 @@
 //  Created by Marcos Griselli on 10/5/17.
 //
 
-import Foundation
+import UIKit
 
 /// AnimationType available to perform/
 ///

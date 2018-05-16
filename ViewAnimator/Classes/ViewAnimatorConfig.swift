@@ -5,7 +5,7 @@
 //  Created by Marcos Griselli on 10/9/17.
 //
 
-import Foundation
+import UIKit
 
 /// Configuration class for the default values used in animations.
 /// All it's values are used when creating 'random' animations as well.
