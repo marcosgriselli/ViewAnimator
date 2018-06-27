@@ -17,6 +17,7 @@ public enum AnimationType: Animation {
     case from(direction: Direction, offset: CGFloat)
     case zoom(scale: CGFloat)
     case rotate(angle: CGFloat)
+	case fade
     
     /// Creates the corresponding CGAffineTransform for AnimationType.from.
     public var initialTransform: CGAffineTransform {
@@ -29,6 +30,8 @@ public enum AnimationType: Animation {
              return CGAffineTransform(scaleX: scale, y: scale)
         case .rotate(let angle):
             return CGAffineTransform(rotationAngle: angle)
+		case .fade:
+			return CGAffineTransform.identity
         }
     }
     
