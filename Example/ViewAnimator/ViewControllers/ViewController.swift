@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
-    
+	@IBOutlet var titles: [UILabel]!
+	
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: "cell")
@@ -34,6 +35,9 @@ class ViewController: UIViewController {
         
         UIView.animate(views: tableView.visibleCells,
                        animations: [fromAnimation, zoomAnimation], delay: 0.5)
+		
+		let fadeAnimation = AnimationType.fade
+		UIView.animate(views: titles, animations: [fadeAnimation])
     }
 }
 
