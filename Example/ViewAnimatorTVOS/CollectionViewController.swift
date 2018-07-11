@@ -45,7 +45,6 @@ class ViewController: UIViewController {
                        initialAlpha: 1.0,
                        finalAlpha: 0.0,
                        completion: {
-                        //                        self.collectionView?.restoreViewsToIdentity()
                         self.collectionView?.reloadData()
                         self.activityIndicator.startAnimating()
         })
