@@ -27,10 +27,10 @@ class CollectionViewController: UIViewController {
     @IBAction func animateTapped(_ sender: UIBarButtonItem) {
         sender.isEnabled = false
         activityIndicator.stopAnimating()
-        items = Array(repeating: nil, count: 20)
+        items = Array(repeating: nil, count: 5)
         collectionView?.reloadData()
         collectionView?.performBatchUpdates({
-            UIView.animate(views: self.collectionView!.visibleCells,
+            UIView.animate(views: self.collectionView!.orderedVisibleCells,
                 animations: animations, completion: {
                 sender.isEnabled = true
                 })
@@ -39,7 +39,7 @@ class CollectionViewController: UIViewController {
     
     @IBAction func resetTapped(_ sender: UIBarButtonItem) {
         items.removeAll()
-        UIView.animate(views: collectionView!.visibleCells,
+        UIView.animate(views: collectionView!.orderedVisibleCells,
                        animations: animations, reversed: true,
                        initialAlpha: 1.0,
                        finalAlpha: 0.0,
@@ -53,13 +53,18 @@ class CollectionViewController: UIViewController {
 // MARK: UICollectionViewDataSource
 extension CollectionViewController: UICollectionViewDataSource {
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        cell.contentView.backgroundColor = UIColor.red
+        let color: UIColor = indexPath.section % 2 == 0 ? .red : .blue
+        cell.contentView.backgroundColor = color
         return cell
     }
 }
