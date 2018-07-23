@@ -1,15 +1,26 @@
+<p align="center">
 <img src="Resources/banner.svg" height="80"/>
+</p>
+
+<p align="center">
+    <img src="https://img.shields.io/badge/Swift-4.1-orange.svg" />
+        <img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20tvOS-blue.svg?style=flat" />
+        <img src="https://img.shields.io/cocoapods/dt/ViewAnimator.svg?style=flat"/>
+    <a href="https://cocoapods.org/pods/ViewAnimator">
+        <img src="https://img.shields.io/cocoapods/v/ViewAnimator.svg" alt="CocoaPods" />
+    </a>
+    <a href="https://github.com/Carthage/Carthage">
+        <img src="https://img.shields.io/badge/carthage-compatible-4BC51D.svg?style=flat" alt="Carthage" />
+    </a>
+    <a href="https://codebeat.co/projects/github-com-marcosgriselli-viewanimator-master">
+      <img src="https://codebeat.co/badges/633fb33d-66b6-4034-93c0-0f52c5d0e15c" alt="Codebeat" />
+    </a>
+    <a href="https://opensource.org/licenses/MIT">
+      <img src="https://img.shields.io/cocoapods/l/ViewAnimator.svg?style=flat" alt="License" />
+    </a>
+</p>
 
 **ViewAnimator** is a library for building complex iOS UIView animations in an easy way. It provides one line animations for any view included the ones which contain other views like UITableView and UICollectionView with its cells or UIStackView with its arrangedSubviews.
-
-
-[![Version](https://img.shields.io/cocoapods/v/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
-![iOS 8+](https://img.shields.io/badge/iOS-8%2B-blue.svg?style=flat)
-![Swift 4](https://img.shields.io/badge/Swift-4-orange.svg?style=flat)
-![Downloads](https://img.shields.io/cocoapods/dt/ViewAnimator.svg?style=flat)
-[![License](https://img.shields.io/cocoapods/l/ViewAnimator.svg?style=flat)](http://cocoapods.org/pods/ViewAnimator)
-[![codebeat badge](https://codebeat.co/badges/633fb33d-66b6-4034-93c0-0f52c5d0e15c)](https://codebeat.co/projects/github-com-marcosgriselli-viewanimator-master)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ### Entire View&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UITableView&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UICollectionView
 <img src="https://cdn.rawgit.com/marcosgriselli/ViewAnimator/cf065e96/Resources/entireView.svg"/>&nbsp;&nbsp;&nbsp;&nbsp;
