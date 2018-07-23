@@ -1,5 +1,5 @@
 <p align="center">
-<img src="Resources/banner.svg" height="80"/>
+<img src="https://cdn.rawgit.com/marcosgriselli/ViewAnimator/65b0a97b/Resources/banner.svg" height="80"/>
 </p>
 
 <p align="center">
