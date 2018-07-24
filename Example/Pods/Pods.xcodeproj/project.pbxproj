@@ -66,12 +66,12 @@
 
 /* Begin PBXFileReference section */
 		01E5080612A529578FC19DC774AE2D57 /* Pods-ViewAnimator_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ViewAnimator_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0604D4CFF5D3D1D3B09853977017AF8D /* ViewAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ViewAnimator.framework; path = "ViewAnimator-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0604D4CFF5D3D1D3B09853977017AF8D /* ViewAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0745FA9DF0E5654FED2C22CEA6C94C63 /* ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewAnimator.swift; path = ViewAnimator/Classes/ViewAnimator.swift; sourceTree = "<group>"; };
 		08B7B266D072CF0A096ADAEDECF1AE5E /* Pods-ViewAnimatorTVOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ViewAnimatorTVOS-acknowledgements.markdown"; sourceTree = "<group>"; };
 		09D15EBE34995CC2F5EE3E0E9F61E992 /* Pods-ViewAnimator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ViewAnimator_Example.release.xcconfig"; sourceTree = "<group>"; };
 		0B40DCBB10FDD64F9841157827C06AE2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0BB5D8562CC53BCF24109004EB13FB03 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0BB5D8562CC53BCF24109004EB13FB03 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		10C065228B72CCA2928598D94E215FDE /* ViewAnimatorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewAnimatorConfig.swift; path = ViewAnimator/Classes/ViewAnimatorConfig.swift; sourceTree = "<group>"; };
 		1214377BB25FB9406B717DFC32E7E973 /* AnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimationType.swift; sourceTree = "<group>"; };
 		12B334C430847969843E11F2B151E531 /* ViewAnimator-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewAnimator-tvOS-prefix.pch"; path = "../ViewAnimator-tvOS/ViewAnimator-tvOS-prefix.pch"; sourceTree = "<group>"; };
@@ -87,23 +87,23 @@
 		49770022768CD447119B627617C21ED4 /* Pods-ViewAnimator_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ViewAnimator_Tests.modulemap"; sourceTree = "<group>"; };
 		50F323CFC57AD456C8E7563099D4FDF0 /* Pods-ViewAnimator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ViewAnimator_Example-umbrella.h"; sourceTree = "<group>"; };
 		572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5870CAC8AD2C3FE394C1756B84A882EF /* Pods_ViewAnimator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ViewAnimator_Example.framework; path = "Pods-ViewAnimator_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5870CAC8AD2C3FE394C1756B84A882EF /* Pods_ViewAnimator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewAnimator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		602969A5D55C2ED58E199065DE5B6FCE /* ViewAnimator-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "ViewAnimator-iOS.modulemap"; sourceTree = "<group>"; };
 		69CB52838C228FABF9D496BCCA07FD3A /* ViewAnimator-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewAnimator-tvOS-dummy.m"; path = "../ViewAnimator-tvOS/ViewAnimator-tvOS-dummy.m"; sourceTree = "<group>"; };
-		77ACD11F913DCA87C77938D304F95ECE /* Pods_ViewAnimatorTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ViewAnimatorTVOS.framework; path = "Pods-ViewAnimatorTVOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77ACD11F913DCA87C77938D304F95ECE /* Pods_ViewAnimatorTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewAnimatorTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BDFC8AF88DE318CF2C39712764BB5F /* Pods-ViewAnimator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ViewAnimator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8D05AE34AB0F9F396024FFDD6A89BE6D /* Pods-ViewAnimator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ViewAnimator_Example.modulemap"; sourceTree = "<group>"; };
 		8DC940F175ACA3BC36743BFFA5006756 /* Pods-ViewAnimator_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ViewAnimator_Example-resources.sh"; sourceTree = "<group>"; };
 		8DED3ED5E0AC62D8FF0A89AFD4CF7522 /* UICollectionView + ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UICollectionView + ViewAnimator.swift"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		990768A6C2FC3C3203648B046059CFF1 /* ViewAnimator-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "ViewAnimator-tvOS.modulemap"; path = "../ViewAnimator-tvOS/ViewAnimator-tvOS.modulemap"; sourceTree = "<group>"; };
 		A8943332A04E5ABEF543B6AA3A7359E6 /* Pods-ViewAnimator_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ViewAnimator_Tests-umbrella.h"; sourceTree = "<group>"; };
 		AC32A22F54FECF35DAB88B6D0B4D8B09 /* Pods-ViewAnimator_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ViewAnimator_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		B2C46D4CE853D599E24C8C57D90EDC8A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B2C46D4CE853D599E24C8C57D90EDC8A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B51CFDDFB4058B6EE765058B522ADCD5 /* Direction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		B66968CECA9BB63C581B23AD435BCE6D /* Pods-ViewAnimator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ViewAnimator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B6F89EB18D2FF3E55D0A993A94812A04 /* Pods-ViewAnimator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ViewAnimator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B82C2D1DB404EBF1682DF974D6F581E0 /* Pods_ViewAnimator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ViewAnimator_Tests.framework; path = "Pods-ViewAnimator_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B82C2D1DB404EBF1682DF974D6F581E0 /* Pods_ViewAnimator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewAnimator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DF4600765CBED5F06B9F59D523C21D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../ViewAnimator-tvOS/Info.plist"; sourceTree = "<group>"; };
 		CA65B811C87B18118070C3191F694313 /* ViewAnimator-tvOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ViewAnimator-tvOS.xcconfig"; path = "../ViewAnimator-tvOS/ViewAnimator-tvOS.xcconfig"; sourceTree = "<group>"; };
 		CAEE1A10C39FF4170AE49D5E78E183CE /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
@@ -115,11 +115,11 @@
 		DCF6B207C89A5130CF39AC8E5092C7FE /* Pods-ViewAnimator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ViewAnimator_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DDEDBA9D046AF5BB57973325F1158511 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E35501ACB350B6C26FE47D16F3220CB5 /* Pods-ViewAnimatorTVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ViewAnimatorTVOS.debug.xcconfig"; sourceTree = "<group>"; };
-		E729C85EF301D27DFD1B135D6236DFDD /* ViewAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ViewAnimator.framework; path = "ViewAnimator-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E729C85EF301D27DFD1B135D6236DFDD /* ViewAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDAF29C4FF54EA2C54945101E7AEA205 /* ViewAnimator-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ViewAnimator-iOS-dummy.m"; sourceTree = "<group>"; };
 		EF4C431548E5D6768F0BCFC2C0E1DC28 /* ViewAnimator-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ViewAnimator-iOS-prefix.pch"; sourceTree = "<group>"; };
 		EF517460FA8E3BF65971FC4AF3025A37 /* Pods-ViewAnimator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ViewAnimator_Tests-dummy.m"; sourceTree = "<group>"; };
-		F151B198948486AD2BB481D5819DCBBC /* ViewAnimator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ViewAnimator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F151B198948486AD2BB481D5819DCBBC /* ViewAnimator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ViewAnimator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F28C15C8D23BD6057705BBE3E2CFDE3C /* Pods-ViewAnimator_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ViewAnimator_Tests-resources.sh"; sourceTree = "<group>"; };
 		F4410AFDF56472BD5A4E85206698E1B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7716FE893D3CC6D7556E1278042E8DD /* Pods-ViewAnimatorTVOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ViewAnimatorTVOS-dummy.m"; sourceTree = "<group>"; };
@@ -517,7 +517,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -675,6 +675,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 				TVOS_DEPLOYMENT_TARGET = 11.3;
 			};
