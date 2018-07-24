@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -95,12 +96,12 @@
                                 </userDefinedRuntimeAttributes>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIm-4U-abp">
-                                <rect key="frame" x="13.999999999999993" y="287" width="117.33333333333331" height="41"/>
+                                <rect key="frame" x="14.000000000000007" y="287" width="117.66666666666669" height="41"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvM-fY-6Tr">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvM-fY-6Tr">
                                 <rect key="frame" x="0.0" y="343" width="375" height="386"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="69" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -113,19 +114,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zNY-Kw-AI8">
-                                                    <rect key="frame" x="14" y="10" width="40" height="40"/>
+                                                    <rect key="frame" x="14" y="7.6666666666666679" width="45" height="45"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="5Nu-Ej-M9u"/>
-                                                        <constraint firstAttribute="width" constant="40" id="Qih-Zu-zLY"/>
+                                                        <constraint firstAttribute="width" constant="45" id="Qih-Zu-zLY"/>
+                                                        <constraint firstAttribute="width" secondItem="zNY-Kw-AI8" secondAttribute="height" multiplier="1:1" id="oO6-Wt-RfM"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="20"/>
+                                                            <real key="value" value="22.5"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oy2-kP-1fR">
-                                                    <rect key="frame" x="69" y="19.333333333333332" width="83" height="20.999999999999996"/>
+                                                    <rect key="frame" x="74" y="19.666666666666668" width="83" height="21.000000000000004"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -133,10 +134,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="zNY-Kw-AI8" firstAttribute="leading" secondItem="0mw-bg-mOo" secondAttribute="leading" constant="14" id="16F-fc-xWG"/>
-                                                <constraint firstItem="zNY-Kw-AI8" firstAttribute="top" secondItem="0mw-bg-mOo" secondAttribute="top" constant="10" id="FDS-fX-OZG"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oy2-kP-1fR" secondAttribute="trailing" constant="20" symbolic="YES" id="PVF-is-W6n"/>
                                                 <constraint firstItem="zNY-Kw-AI8" firstAttribute="centerY" secondItem="0mw-bg-mOo" secondAttribute="centerY" id="WrC-d7-nAx"/>
-                                                <constraint firstAttribute="bottom" secondItem="zNY-Kw-AI8" secondAttribute="bottom" constant="10" id="cOn-J1-xtv"/>
                                                 <constraint firstItem="oy2-kP-1fR" firstAttribute="centerY" secondItem="zNY-Kw-AI8" secondAttribute="centerY" id="rF3-lO-V7E"/>
                                                 <constraint firstItem="oy2-kP-1fR" firstAttribute="leading" secondItem="zNY-Kw-AI8" secondAttribute="trailing" constant="15" id="tw1-YN-OWL"/>
                                             </constraints>
@@ -149,10 +148,9 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zt-0R-iYI">
-                                <rect key="frame" x="279" y="53.333333333333343" width="80" height="50"/>
+                                <rect key="frame" x="292" y="53.666666666666657" width="67" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="tPW-WK-mft"/>
-                                    <constraint firstAttribute="width" constant="80" id="tz3-5N-u4n"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <state key="normal" title="Animate"/>
@@ -168,6 +166,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="4zt-0R-iYI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hW6-Of-57y" secondAttribute="trailing" constant="100" id="2v9-S8-lCq"/>
                             <constraint firstItem="62B-9S-MCt" firstAttribute="top" secondItem="qoX-Tp-oK7" secondAttribute="bottom" constant="15" id="2za-2H-90u"/>
                             <constraint firstItem="qoX-Tp-oK7" firstAttribute="leading" secondItem="hW6-Of-57y" secondAttribute="leading" id="Cas-HV-sWw"/>
                             <constraint firstItem="dvM-fY-6Tr" firstAttribute="trailing" secondItem="62B-9S-MCt" secondAttribute="trailing" id="D6z-4g-Xnd"/>
@@ -197,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1242" y="771"/>
+            <point key="canvasLocation" x="-1110" y="1046"/>
         </scene>
         <!--TableView-->
         <scene sceneID="Y3y-J1-p5S">
@@ -244,7 +243,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C6k-fB-RW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-396" y="1535"/>
+            <point key="canvasLocation" x="-394" y="2080"/>
         </scene>
         <!--CollectionView-->
         <scene sceneID="IWO-55-e04">
@@ -268,7 +267,7 @@
                                     <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Mz3-rw-Hfm">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Mz3-rw-Hfm">
                                         <rect key="frame" x="10" y="10" width="105" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -279,7 +278,7 @@
                                 </cells>
                             </collectionView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="tnU-O2-2YK">
-                                <rect key="frame" x="177" y="396" width="20" height="20"/>
+                                <rect key="frame" x="177.66666666666666" y="396" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -315,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vuC-4N-sDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="485.60000000000002" y="1534.729064039409"/>
+            <point key="canvasLocation" x="463" y="2080"/>
         </scene>
         <!--TableView-->
         <scene sceneID="cV2-LB-XaS">
@@ -334,7 +333,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ieI-lO-VGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-395.19999999999999" y="770.68965517241384"/>
+            <point key="canvasLocation" x="-394" y="1046"/>
         </scene>
         <!--CollectionView-->
         <scene sceneID="oUW-63-zxC">
@@ -353,7 +352,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxO-Cw-Hx3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="463" y="771"/>
+            <point key="canvasLocation" x="463" y="1046"/>
         </scene>
     </scenes>
 </document>
