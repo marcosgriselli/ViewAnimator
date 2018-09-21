@@ -167,10 +167,13 @@ Feel free to collaborate with ideas 💭, issues ⁉️ and/or pull requests �
 
 If you use ViewAnimator in your app I'd love to hear about it and feature your animation here!
 
+### Contributors
+
+[![](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/ViewAnimator/images/0)](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/ViewAnimator/links/0)[![](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/ViewAnimator/images/1)](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/ViewAnimator/links/1)[![](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/ViewAnimator/images/2)](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/ViewAnimator/links/2)[![](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/ViewAnimator/images/3)](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/ViewAnimator/links/3)[![](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/ViewAnimator/images/4)](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/ViewAnimator/links/4)[![](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/ViewAnimator/images/5)](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/ViewAnimator/links/5)[![](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/ViewAnimator/images/6)](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/ViewAnimator/links/6)[![](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/ViewAnimator/images/7)](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/ViewAnimator/links/7)
+
 ### Author
 
 Marcos Griselli | <a href="url"><img src="https://cdn.rawgit.com/marcosgriselli/ViewAnimator/cf065e96/Resources/twitterLogo.svg" height="17"></a> [@marcosgriselli](https://twitter.com/marcosgriselli)
-
 
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/marcosgriselli.svg?style=social)](https://twitter.com/marcosgriselli)
