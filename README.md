@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/Swift-4.1-orange.svg" />
+    <img src="https://img.shields.io/badge/Swift-4.2-orange.svg" />
         <img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20tvOS-blue.svg?style=flat" />
         <img src="https://img.shields.io/cocoapods/dt/ViewAnimator.svg?style=flat"/>
     <a href="https://cocoapods.org/pods/ViewAnimator">

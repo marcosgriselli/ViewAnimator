@@ -12,7 +12,7 @@ import ViewAnimator
 class TableViewController: UITableViewController {
 
     private var items = [Any?]()
-    private let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+    private let activityIndicator = UIActivityIndicatorView(style: .gray)
     private let animations = [AnimationType.from(direction: .bottom, offset: 30.0)]
 
     override func viewDidLoad() {
