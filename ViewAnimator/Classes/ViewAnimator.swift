@@ -27,7 +27,7 @@ public extension UIView {
                         finalAlpha: CGFloat = 1.0,
                         delay: Double = 0,
                         duration: TimeInterval = ViewAnimatorConfig.duration,
-                        options: UIViewAnimationOptions = [],
+                        options: UIView.AnimationOptions = [],
                         completion: (() -> Void)? = nil) {
         
         let transformFrom = transform
@@ -66,7 +66,7 @@ public extension UIView {
                                delay: Double = 0,
                                animationInterval: TimeInterval = 0.05,
                                duration: TimeInterval = ViewAnimatorConfig.duration,
-                               options: UIViewAnimationOptions = [],
+                               options: UIView.AnimationOptions = [],
                                completion: (() -> Void)? = nil) {
 
         guard views.count > 0 else {
