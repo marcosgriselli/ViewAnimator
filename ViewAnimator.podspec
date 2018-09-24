@@ -33,6 +33,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '9.0'
   s.source_files = 'ViewAnimator/Classes/**/*'
-  s.swift_version = '4.1'
+  s.swift_version = '4.2'
 
 end
