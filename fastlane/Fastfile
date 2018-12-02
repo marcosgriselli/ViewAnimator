@@ -1,6 +1,15 @@
 default_platform(:ios)
+podspec_name = "ViewAnimator.podspec"
 
 platform :ios do
+
+  lane :test do
+    scan(
+      workspace: "./Example/ViewAnimator.xcworkspace",
+      scheme: "ViewAnimator-Example",
+      device: "iPhone 8"
+    )
+  end
 
   desc "Release a new version with a patch bump_type"
   lane :patch do
@@ -19,7 +28,6 @@ platform :ios do
 
   def release(type)
     pod_lib_lint
-    podspec_name = "ViewAnimator.podspec"
     version = version_bump_podspec(path: podspec_name, 
                                    bump_type: type)
     git_add(path: podspec_name)
@@ -27,6 +35,17 @@ platform :ios do
                message: "#{version} release")
     add_git_tag(tag: "#{version}")
     push_to_git_remote
+    pod_push
+  end
+
+  lane :release_current do
+    version = version_get_podspec(path: podspec_name)
+    if git_tag_exists(tag: version)
+      UI.user_error!("The tag #{version} already exists on the repo. To release a new version of the library bump the version on #{podspec_name}")
+    end
+    pod_lib_lint
+    add_git_tag(tag: "#{version}")
+    push_git_tags
     pod_push
   end
 end
