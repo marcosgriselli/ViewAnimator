@@ -2,8 +2,6 @@ default_platform(:ios)
 
 platform :ios do
 
-  podspec_name = "ViewAnimator.podspec"
-
   before_all do 
     @podspec_name = "ViewAnimator.podspec"
   end
