@@ -4,6 +4,10 @@ platform :ios do
 
   podspec_name = "ViewAnimator.podspec"
 
+  before_all do 
+    @podspec_name = "ViewAnimator.podspec"
+  end
+
   lane :test do
     scan(
       workspace: "./Example/ViewAnimator.xcworkspace",
@@ -29,10 +33,10 @@ platform :ios do
 
   def release(type)
     pod_lib_lint
-    version = version_bump_podspec(path: podspec_name, 
+    version = version_bump_podspec(path: @podspec_name, 
                                    bump_type: type)
-    git_add(path: podspec_name)
-    git_commit(path: [podspec_name],
+    git_add(path: @podspec_name)
+    git_commit(path: [@podspec_name],
                message: "#{version} release")
     add_git_tag(tag: "#{version}")
     push_to_git_remote
@@ -40,9 +44,9 @@ platform :ios do
   end
 
   lane :release_current do
-    version = version_get_podspec(path: podspec_name)
+    version = version_get_podspec(path: @podspec_name)
     if git_tag_exists(tag: version)
-      UI.user_error!("The tag #{version} already exists on the repo. To release a new version of the library bump the version on #{podspec_name}")
+      UI.user_error!("The tag #{version} already exists on the repo. To release a new version of the library bump the version on #{@podspec_name}")
     end
     pod_lib_lint
     add_git_tag(tag: "#{version}")
