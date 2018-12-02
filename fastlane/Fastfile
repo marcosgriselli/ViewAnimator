@@ -1,7 +1,8 @@
 default_platform(:ios)
-podspec_name = "ViewAnimator.podspec"
 
 platform :ios do
+
+  podspec_name = "ViewAnimator.podspec"
 
   lane :test do
     scan(
