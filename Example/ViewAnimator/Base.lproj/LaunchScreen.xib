@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,24 +15,32 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="pAW-h2-cEc">
-                    <rect key="frame" x="93.333333333333329" y="356" width="187.33333333333337" height="100"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="q3q-JU-mwo">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="o6p-cH-24Z">
+                    <rect key="frame" x="112.66666666666669" y="328.66666666666669" width="150" height="154.66666666666669"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="pAW-h2-cEc" secondAttribute="height" multiplier="15:8" id="PQz-fC-7e5"/>
+                        <constraint firstAttribute="width" secondItem="o6p-cH-24Z" secondAttribute="height" multiplier="97:100" id="tER-3Z-E5w"/>
                     </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="pAW-h2-cEc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7zu-om-RO0"/>
-                <constraint firstItem="pAW-h2-cEc" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="EUp-qd-87i"/>
-                <constraint firstItem="pAW-h2-cEc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="NNC-nU-AOn"/>
+                <constraint firstItem="o6p-cH-24Z" firstAttribute="width" secondItem="q3q-JU-mwo" secondAttribute="width" multiplier="40%" id="O23-d2-NXd"/>
+                <constraint firstAttribute="trailing" secondItem="q3q-JU-mwo" secondAttribute="trailing" id="Uol-ux-7Iq"/>
+                <constraint firstItem="o6p-cH-24Z" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="XIN-BW-ZYa"/>
+                <constraint firstAttribute="bottom" secondItem="q3q-JU-mwo" secondAttribute="bottom" id="hYm-JO-9fC"/>
+                <constraint firstItem="q3q-JU-mwo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mjd-Js-Fk9"/>
+                <constraint firstItem="o6p-cH-24Z" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nfc-7u-Edx"/>
+                <constraint firstItem="q3q-JU-mwo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pvm-eR-FnY"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <point key="canvasLocation" x="548" y="553"/>
         </view>
     </objects>
     <resources>
-        <image name="icon" width="869" height="475"/>
+        <image name="background" width="120" height="120"/>
+        <image name="icon" width="194" height="200"/>
     </resources>
 </document>
