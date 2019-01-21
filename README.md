@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://cdn.jsdelivr.net/gh/marcosgriselli/ViewAnimator@65b0a97b14ad54c63b1f5b1862ad7c58dc5b5568/Resources/banner.svg" height="80"/>
+<img src="./Resources/banner_new.svg"/>
 </p>
 
 <p align="center">
