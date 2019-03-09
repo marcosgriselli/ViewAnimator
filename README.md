@@ -36,6 +36,8 @@ SVG animations inspired by [Luke Zhao's](http://lkzhao.com) project [Hero](https
 
 UI created by [Messaki](https://dribbble.com/messaki), make sure to check out his profile.
 
+*Logo and banner created by [@cintia_ve](https://twitter.com/cintia_ve)*
+
 ## Installation
 
 ### CocoaPods
