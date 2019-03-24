@@ -27,4 +27,10 @@ public class ViewAnimatorConfig {
     
     /// Maximum rotation (left or right) to be applied in animations using random AnimationType.rotate
     public static var maxRotationAngle: CGFloat = CGFloat.pi/4
+
+    /// The damping ratio for the spring animation as it approaches its quiescent state.
+    public static var springDampingRatio: CGFloat = 1
+    
+    /// The initial spring velocity. For smooth start to the animation, match this value to the view’s velocity as it was prior to attachment.
+    public static var initialSpringVelocity: CGFloat = 0
 }
