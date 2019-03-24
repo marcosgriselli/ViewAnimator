@@ -74,6 +74,8 @@ func animate(animations: [Animation],
              finalAlpha: CGFloat = 1.0,
              delay: Double = 0,
              duration: TimeInterval = ViewAnimatorConfig.duration,
+             usingSpringWithDamping dampingRatio: CGFloat = ViewAnimatorConfig.springDampingRatio,
+             initialSpringVelocity velocity: CGFloat = ViewAnimatorConfig.initialSpringVelocity,
              completion: (() -> Void)? = nil)
 ``` 
 
@@ -90,6 +92,8 @@ static func animate(views: [UIView],
                     delay: Double = 0,
                     animationInterval: TimeInterval = 0.05,
                     duration: TimeInterval = ViewAnimatorConfig.duration,
+                    usingSpringWithDamping dampingRatio: CGFloat = ViewAnimatorConfig.springDampingRatio,
+                    initialSpringVelocity velocity: CGFloat = ViewAnimatorConfig.initialSpringVelocity,
                     completion: (() -> Void)? = nil)
 ```
 
