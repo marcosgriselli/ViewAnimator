@@ -47,7 +47,7 @@ public extension UIView {
                        delay: delay,
                        usingSpringWithDamping: dampingRatio,
                        initialSpringVelocity: velocity,
-                       options: [.beginFromCurrentState],
+                       options: options,
                        animations: { [weak self] in
             self?.transform = reversed ? transformTo : transformFrom
             self?.alpha = finalAlpha
