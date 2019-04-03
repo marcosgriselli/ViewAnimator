@@ -23,7 +23,7 @@ public extension UIView {
     ///   - dampingRatio: The damping ratio for the spring animation.
     ///   - velocity: The initial spring velocity.
     ///   - completion: CompletionBlock after the animation finishes.
-    public func animate(animations: [Animation],
+    func animate(animations: [Animation],
                         reversed: Bool = false,
                         initialAlpha: CGFloat = 0.0,
                         finalAlpha: CGFloat = 1.0,
@@ -69,7 +69,7 @@ public extension UIView {
     ///   - dampingRatio: The damping ratio for the spring animation.
     ///   - velocity: The initial spring velocity.
     ///   - completion: CompletionBlock after the animation finishes.
-    public static func animate(views: [UIView],
+    static func animate(views: [UIView],
                                animations: [Animation],
                                reversed: Bool = false,
                                initialAlpha: CGFloat = 0.0,

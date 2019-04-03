@@ -22,7 +22,7 @@ extension Bool {
 public extension Double {
     
     /// Returns a random floating point number between 0.0 and 1.0, inclusive.
-    public static var random: Double {
+    static var random: Double {
         return Double(arc4random()) / 0xFFFFFFFF
     }
 
@@ -32,7 +32,7 @@ public extension Double {
     ///   - min: Minimum value of the random value.
     ///   - max: Maximum value of the random value.
     /// - Returns: Generated value.
-    public static func random(min: Double, max: Double) -> Double {
+    static func random(min: Double, max: Double) -> Double {
         return Double.random * (max - min) + min
     }
 }
@@ -42,8 +42,8 @@ public extension Double {
 public extension Float {
     
     /// Returns a random floating point number between 0.0 and 1.0, inclusive.
-    public static var random: Float {
-        return Float(arc4random()) / 0xFFFFFFFF
+    static var random: Float {
+        return Float(arc4random()) / 4294967296
     }
 }
 
