@@ -54,7 +54,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		693B8CAD1F053E1C0C88C3FF /* Pods-ViewAnimator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewAnimator_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViewAnimator_Example/Pods-ViewAnimator_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		74466AC3ACB2B3D0E0F341BE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		9879DE547DBE46C7BB37A045 /* ViewAnimator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ViewAnimator.podspec; path = ../ViewAnimator.podspec; sourceTree = "<group>"; };
+		9879DE547DBE46C7BB37A045 /* ViewAnimator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ViewAnimator.podspec; path = ../ViewAnimator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AB9AC85D227DF68E4DF954C2 /* Pods-ViewAnimatorTVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewAnimatorTVOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViewAnimatorTVOS/Pods-ViewAnimatorTVOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ACD712B7095A9DF539CB97D3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C0288BA4824DA606EF78ECED /* Pods-ViewAnimator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewAnimator_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViewAnimator_Tests/Pods-ViewAnimator_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -354,7 +354,7 @@
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "ViewAnimator" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -426,7 +426,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ViewAnimator_Example/Pods-ViewAnimator_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ViewAnimator_Example/Pods-ViewAnimator_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ViewAnimator-iOS/ViewAnimator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -435,7 +435,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViewAnimator_Example/Pods-ViewAnimator_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViewAnimator_Example/Pods-ViewAnimator_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		456664413F468050048F696A /* [CP] Check Pods Manifest.lock */ = {
@@ -480,7 +480,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ViewAnimatorTVOS/Pods-ViewAnimatorTVOS-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ViewAnimatorTVOS/Pods-ViewAnimatorTVOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ViewAnimator-tvOS/ViewAnimator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -489,7 +489,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViewAnimatorTVOS/Pods-ViewAnimatorTVOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViewAnimatorTVOS/Pods-ViewAnimatorTVOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -679,7 +679,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -694,7 +694,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -715,7 +715,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewAnimator_Example.app/ViewAnimator_Example";
 			};
 			name = Debug;
@@ -733,7 +733,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewAnimator_Example.app/ViewAnimator_Example";
 			};
 			name = Release;
@@ -760,7 +760,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.3;
 			};
@@ -786,7 +786,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcosgriselli.ViewAnimatorTVOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.3;
 			};

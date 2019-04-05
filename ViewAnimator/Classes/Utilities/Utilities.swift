@@ -20,10 +20,10 @@ extension Bool {
 
 // MARK: Double
 public extension Double {
-    
+
     /// Returns a random floating point number between 0.0 and 1.0, inclusive.
-    public static var random: Double {
-        return Double(arc4random()) / 0xFFFFFFFF
+    static var random: Double {
+        return Double(arc4random()) / Double(UInt32.max)
     }
 
     /// Generates a random double.
@@ -32,7 +32,7 @@ public extension Double {
     ///   - min: Minimum value of the random value.
     ///   - max: Maximum value of the random value.
     /// - Returns: Generated value.
-    public static func random(min: Double, max: Double) -> Double {
+    static func random(min: Double, max: Double) -> Double {
         return Double.random * (max - min) + min
     }
 }
@@ -40,18 +40,18 @@ public extension Double {
 // MARK: Float Extension
 
 public extension Float {
-    
+
     /// Returns a random floating point number between 0.0 and 1.0, inclusive.
-    public static var random: Float {
-        return Float(arc4random()) / 0xFFFFFFFF
+    static var random: Float {
+        return Float(Double.random)
     }
 }
 
-extension CGFloat {
+public extension CGFloat {
 
     /// Returns a random floating point number between 0.0 and 1.0, inclusive.
-    public static var random: CGFloat {
-        return CGFloat(Float.random)
+    static var random: CGFloat {
+        return CGFloat(Double.random)
     }
 
     /// Generates a random CGFloat.
@@ -60,7 +60,7 @@ extension CGFloat {
     ///   - min: Minimum value of the random value.
     ///   - max: Maximum value of the random value.
     /// - Returns: Generated value.
-    public static func random(min: CGFloat, max: CGFloat) -> CGFloat {
+    static func random(min: CGFloat, max: CGFloat) -> CGFloat {
         return CGFloat.random * (max - min) + min
     }
 }
