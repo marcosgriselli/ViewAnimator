@@ -8,7 +8,7 @@
 import UIKit
 
 /// Direction of the animation used in AnimationType.from.
-public enum Direction: Int {
+public enum Direction: Int, CaseIterable {
 
     case top
     case left
@@ -37,7 +37,6 @@ public enum Direction: Int {
 
     /// Random direction.
     static func random() -> Direction {
-        let rawValue = Int(arc4random_uniform(4))
-        return Direction(rawValue: rawValue)!
+        return allCases.randomElement()!
     }
 }

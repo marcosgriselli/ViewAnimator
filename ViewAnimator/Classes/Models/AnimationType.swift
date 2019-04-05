@@ -36,16 +36,15 @@ public enum AnimationType: Animation {
     ///
     /// - Returns: Newly generated random Animation.
     public static func random() -> Animation {
-        let index = Int(arc4random_uniform(3))
+        let index = Int.random(in: 0..<3)
         if index == 1 {
             return AnimationType.from(direction: Direction.random(),
                                       offset: ViewAnimatorConfig.offset)
         } else if index == 2 {
-            let scale = Double.random(min: 0, max: ViewAnimatorConfig.maxZoomScale)
+            let scale = Double.random(in: 0...ViewAnimatorConfig.maxZoomScale)
             return AnimationType.zoom(scale: CGFloat(scale))
         }
-        let angle = CGFloat.random(min: -ViewAnimatorConfig.maxRotationAngle,
-                                   max: ViewAnimatorConfig.maxRotationAngle)
+        let angle = CGFloat.random(in: -ViewAnimatorConfig.maxRotationAngle...ViewAnimatorConfig.maxRotationAngle)
         return AnimationType.rotate(angle: angle)
     }
 }

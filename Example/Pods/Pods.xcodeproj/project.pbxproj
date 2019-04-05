@@ -10,7 +10,6 @@
 		01679E2EEA1C52E24F5A9ACF12CB82E3 /* Pods-ViewAnimator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 649BC1C107CC3714340D6889F94A5C2A /* Pods-ViewAnimator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		040B1BF73253FE6E0C8D566BFED44F4C /* ViewAnimator-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 161C8145B2037381915139B4A468DCB7 /* ViewAnimator-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16415A477364313093712E0D2A6075C7 /* Pods-ViewAnimator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 365E506B6F26C55593C24336B8EF6049 /* Pods-ViewAnimator_Tests-dummy.m */; };
-		197319BAAECB79E54449373D0AB314D9 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D35F116A0332628CEF33B39716CA8B /* Utilities.swift */; };
 		2375B594E8783CE481D6D757B277A6F7 /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B7EAE01A9490F35E601C7E5BE5D776 /* AnimationType.swift */; };
 		29EAA478BECDCEA92FA182BA07AAEBAE /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8EADFCB41EAE4102F9E08EAF28B38A /* Direction.swift */; };
 		3CF0544FF6C40E745187FD9AC4EA141B /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8EADFCB41EAE4102F9E08EAF28B38A /* Direction.swift */; };
@@ -36,7 +35,6 @@
 		C75A650758EFB9303D7C90CA5E480DF9 /* ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B5C0E430EA68F1327CB383C8913A6 /* ViewAnimator.swift */; };
 		D61281AAAB9E4331C1896D7E3C8FB2FE /* Pods-ViewAnimatorTVOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C81DA16EBA2769CF8E3882EF319795D /* Pods-ViewAnimatorTVOS-dummy.m */; };
 		DA1E507F7FB6829BB2BEFB65DBF6C55F /* UITableView + ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212F3A7B70744E4BDAEB31FF6E025D6B /* UITableView + ViewAnimator.swift */; };
-		DA6FBA2DE7F0E6060BE35235F82915B6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D35F116A0332628CEF33B39716CA8B /* Utilities.swift */; };
 		EB89298D336A60BE2441854F4B4725A3 /* ViewAnimator-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF7E8366E7468B750B3B20B3F255C39 /* ViewAnimator-iOS-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -94,7 +92,6 @@
 		649BC1C107CC3714340D6889F94A5C2A /* Pods-ViewAnimator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ViewAnimator_Example-umbrella.h"; sourceTree = "<group>"; };
 		6AE50EEFF05CFB6B34FAEB6DF10E464A /* Pods-ViewAnimatorTVOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ViewAnimatorTVOS-frameworks.sh"; sourceTree = "<group>"; };
 		77A9A0AE89D173547EB3BFBA71348722 /* ViewAnimator-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ViewAnimator-iOS-prefix.pch"; sourceTree = "<group>"; };
-		85D35F116A0332628CEF33B39716CA8B /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		86834FC006D2EFD43BD732F6F6E1F2F9 /* Pods-ViewAnimator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ViewAnimator_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8FF7E8366E7468B750B3B20B3F255C39 /* ViewAnimator-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ViewAnimator-iOS-dummy.m"; sourceTree = "<group>"; };
 		93615D70EF718080345B1AA4C7A35563 /* Pods-ViewAnimatorTVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ViewAnimatorTVOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,7 +184,6 @@
 				1EA0049C1F6EF6474EFA6F79A7FDA7B3 /* Pod */,
 				01FC010FF9523337B3835FA7E4FFEE7C /* Protocols */,
 				03DDB2F3AABE570C6BB02293FEE2B8D8 /* Support Files */,
-				DF55D0244D299F946A36945788E36148 /* Utilities */,
 			);
 			name = ViewAnimator;
 			path = ../..;
@@ -357,15 +353,6 @@
 				2101AA2BA8B10B8F0EF5068FDFB4D481 /* Products */,
 				793FB01228353C6C292FFDE41D3833D7 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		DF55D0244D299F946A36945788E36148 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				85D35F116A0332628CEF33B39716CA8B /* Utilities.swift */,
-			);
-			name = Utilities;
-			path = ViewAnimator/Classes/Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -586,7 +573,6 @@
 				3CF0544FF6C40E745187FD9AC4EA141B /* Direction.swift in Sources */,
 				A2661CF23715AAAA68E4058DC676E1DC /* UICollectionView + ViewAnimator.swift in Sources */,
 				C685363CB687516B4E937C45B73B436F /* UITableView + ViewAnimator.swift in Sources */,
-				197319BAAECB79E54449373D0AB314D9 /* Utilities.swift in Sources */,
 				EB89298D336A60BE2441854F4B4725A3 /* ViewAnimator-iOS-dummy.m in Sources */,
 				8F5079DBDF04B74F58BD322EAF38F8BB /* ViewAnimator.swift in Sources */,
 				6E99C1E2D2EA6F986634790C986BA301 /* ViewAnimatorConfig.swift in Sources */,
@@ -626,7 +612,6 @@
 				29EAA478BECDCEA92FA182BA07AAEBAE /* Direction.swift in Sources */,
 				766E1B5C30E0B6CD42322EA3BB02D850 /* UICollectionView + ViewAnimator.swift in Sources */,
 				DA1E507F7FB6829BB2BEFB65DBF6C55F /* UITableView + ViewAnimator.swift in Sources */,
-				DA6FBA2DE7F0E6060BE35235F82915B6 /* Utilities.swift in Sources */,
 				9C4A87FDB84150D11D19164FACB03419 /* ViewAnimator-tvOS-dummy.m in Sources */,
 				C75A650758EFB9303D7C90CA5E480DF9 /* ViewAnimator.swift in Sources */,
 				499035133868D102A1EEEAE38F08EE1B /* ViewAnimatorConfig.swift in Sources */,
@@ -668,7 +653,6 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -702,7 +686,6 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -770,7 +753,6 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -803,7 +785,6 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -962,7 +943,6 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
