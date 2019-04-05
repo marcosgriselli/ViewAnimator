@@ -23,16 +23,16 @@ public extension UIView {
     ///   - dampingRatio: The damping ratio for the spring animation.
     ///   - velocity: The initial spring velocity.
     ///   - completion: CompletionBlock after the animation finishes.
-    public func animate(animations: [Animation],
-                        reversed: Bool = false,
-                        initialAlpha: CGFloat = 0.0,
-                        finalAlpha: CGFloat = 1.0,
-                        delay: Double = 0,
-                        duration: TimeInterval = ViewAnimatorConfig.duration,
-                        usingSpringWithDamping dampingRatio: CGFloat = ViewAnimatorConfig.springDampingRatio,
-                        initialSpringVelocity velocity: CGFloat = ViewAnimatorConfig.initialSpringVelocity,
-                        options: UIView.AnimationOptions = [],
-                        completion: (() -> Void)? = nil) {
+    func animate(animations: [Animation],
+                 reversed: Bool = false,
+                 initialAlpha: CGFloat = 0.0,
+                 finalAlpha: CGFloat = 1.0,
+                 delay: Double = 0,
+                 duration: TimeInterval = ViewAnimatorConfig.duration,
+                 usingSpringWithDamping dampingRatio: CGFloat = ViewAnimatorConfig.springDampingRatio,
+                 initialSpringVelocity velocity: CGFloat = ViewAnimatorConfig.initialSpringVelocity,
+                 options: UIView.AnimationOptions = [],
+                 completion: (() -> Void)? = nil) {
         
         let transformFrom = transform
         var transformTo = transform
@@ -69,18 +69,18 @@ public extension UIView {
     ///   - dampingRatio: The damping ratio for the spring animation.
     ///   - velocity: The initial spring velocity.
     ///   - completion: CompletionBlock after the animation finishes.
-    public static func animate(views: [UIView],
-                               animations: [Animation],
-                               reversed: Bool = false,
-                               initialAlpha: CGFloat = 0.0,
-                               finalAlpha: CGFloat = 1.0,
-                               delay: Double = 0,
-                               animationInterval: TimeInterval = 0.05,
-                               duration: TimeInterval = ViewAnimatorConfig.duration,
-                               usingSpringWithDamping dampingRatio: CGFloat = ViewAnimatorConfig.springDampingRatio,
-                               initialSpringVelocity velocity: CGFloat = ViewAnimatorConfig.initialSpringVelocity,
-                               options: UIView.AnimationOptions = [],
-                               completion: (() -> Void)? = nil) {
+    static func animate(views: [UIView],
+                        animations: [Animation],
+                        reversed: Bool = false,
+                        initialAlpha: CGFloat = 0.0,
+                        finalAlpha: CGFloat = 1.0,
+                        delay: Double = 0,
+                        animationInterval: TimeInterval = 0.05,
+                        duration: TimeInterval = ViewAnimatorConfig.duration,
+                        usingSpringWithDamping dampingRatio: CGFloat = ViewAnimatorConfig.springDampingRatio,
+                        initialSpringVelocity velocity: CGFloat = ViewAnimatorConfig.initialSpringVelocity,
+                        options: UIView.AnimationOptions = [],
+                        completion: (() -> Void)? = nil) {
 
         guard views.count > 0 else {
             completion?()
