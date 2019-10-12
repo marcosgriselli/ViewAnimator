@@ -2,8 +2,8 @@
 import PackageDescription
 
 let package = Package(
-    name: "Kingfisher",
-    platforms: [.iOS(.v10), .tvOS(.v10)]
+    name: "ViewAnimator",
+    platforms: [.iOS(.v10), .tvOS(.v10)],
     products: [
         .library(name: "ViewAnimator", targets: ["ViewAnimator"]),
     ],
