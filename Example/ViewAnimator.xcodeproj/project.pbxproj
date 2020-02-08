@@ -66,6 +66,7 @@
 		FB7FAA711F8BE01D00B46571 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		FBB74CD420277D8E007DA94F /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		FBD2D4A8200C1EB800C3785B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FBDFD0CD23EE314200D68D86 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		FBEDC6611F8B1EEA00BC2A49 /* Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Designable.swift; sourceTree = "<group>"; };
 		FBFFC9B220950FEB00DFF96B /* ViewAnimatorTVOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewAnimatorTVOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFFC9B420950FEB00DFF96B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +117,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				FBDFD0CD23EE314200D68D86 /* Package.swift */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				FB2DF25F2095141A00C526D5 /* Common */,
 				607FACD21AFB9204008FA782 /* ViewAnimatoriOS */,
