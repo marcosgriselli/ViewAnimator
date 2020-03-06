@@ -13,6 +13,7 @@ private let reuseIdentifier = "Cell"
 
 class CollectionViewController: UIViewController {
     
+    var initiallyAnimates = false
     private var items = [Any?]()
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -21,7 +22,22 @@ class CollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        
+        if initiallyAnimates {
+            activityIndicator.stopAnimating()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.33) {
+                self.items = Array(repeating: nil, count: 5)
+                self.collectionView?.reloadData()
+                self.collectionView?.performBatchUpdates({
+                    UIView.animate(views: self.collectionView!.orderedVisibleCells,
+                                   animations: self.animations, completion: {
+                        
+                        })
+                }, completion: nil)
+            }
+        }
     }
     
     @IBAction func animateTapped(_ sender: UIBarButtonItem) {
@@ -66,5 +82,15 @@ extension CollectionViewController: UICollectionViewDataSource {
         let color: UIColor = indexPath.section % 2 == 0 ? .red : .blue
         cell.contentView.backgroundColor = color
         return cell
+    }
+}
+
+extension CollectionViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let viewController = storyboard?.instantiateViewController(withIdentifier: "CollectionViewController") as? CollectionViewController else {
+            return
+        }
+        viewController.initiallyAnimates = true
+        navigationController?.show(viewController, sender: nil)
     }
 }
