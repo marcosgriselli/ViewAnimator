@@ -17,7 +17,7 @@ class ViewController: UIViewController {
 
     // MARK: - Properties
     private var items = [Any?]()
-    private let animations = [AnimationType.from(direction: .bottom, offset: 30.0)]
+    private let animations = [AnimationType.translate(x: 0, y: 30)]
 
     // MARK: - View Lifecycle
     override func viewDidLoad() {

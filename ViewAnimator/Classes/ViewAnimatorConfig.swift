@@ -11,8 +11,7 @@ import UIKit
 /// All it's values are used when creating 'random' animations as well.
 public class ViewAnimatorConfig {
     
-    /// Amount of movement in points.
-    /// Depends on the Direction given to the AnimationType.
+    /// Amount of movement in points for the translation animation.
     public static var offset: CGFloat = 30.0
     
     /// Duration of the animation.

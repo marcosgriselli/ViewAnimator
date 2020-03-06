@@ -99,11 +99,11 @@ static func animate(views: [UIView],
 
 ### AnimationType
 
-#### Direction
-`Direction` provides the axis where the animation should take place and its movement direction.
+#### Translate
+`Translate` moves the view on the x and y axis. 
 
 ```swift
-let animation = AnimationType.from(direction: .top, offset: 30.0)
+let animation = AnimationType.translate(x: 50, y: 50)
 view.animate(animations: [animation])
 ```
 
@@ -120,14 +120,14 @@ view.animate(animations: [animation])
 You can combine conformances of `Animation` to apply multiple transforms on your animation block. 
 
 ```swift 
-let fromAnimation = AnimationType.from(direction: .right, offset: 30.0)
+let translationAnimation = AnimationType.translate(x: 30, y: 0)
 let zoomAnimation = AnimationType.zoom(scale: 0.2)
 let rotateAnimation = AnimationType.rotate(angle: CGFloat.pi/6)
 UIView.animate(views: collectionView.visibleCells,
                animations: [zoomAnimation, rotateAnimation],
                duration: 0.5)
 UIView.animate(views: tableView.visibleCells,
-               animations: [fromAnimation, zoomAnimation], 
+               animations: [translationAnimation, zoomAnimation], 
                delay: 0.5)
 
 ```

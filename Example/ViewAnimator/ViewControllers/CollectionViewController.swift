@@ -16,7 +16,7 @@ class CollectionViewController: UIViewController {
     private var items = [Any?]()
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    private let animations = [AnimationType.from(direction: .bottom, offset: 30.0)]
+    private let animations = [AnimationType.translate(x: 0, y: 30)]
     
     override func viewDidLoad() {
         super.viewDidLoad()

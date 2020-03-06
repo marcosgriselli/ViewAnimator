@@ -25,7 +25,7 @@ class ViewController: UIViewController {
 
     @IBAction func animate() {
         // Combined animations example
-        let fromAnimation = AnimationType.from(direction: .right, offset: 30.0)
+        let translationAnimation = AnimationType.translate(x: -30, y: 0)
         let zoomAnimation = AnimationType.zoom(scale: 0.2)
         let rotateAnimation = AnimationType.rotate(angle: CGFloat.pi/6)
         UIView.animate(views: collectionView.visibleCells,
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
                        duration: 0.5)
         
         UIView.animate(views: tableView.visibleCells,
-                       animations: [fromAnimation, zoomAnimation], delay: 0.5)
+                       animations: [translationAnimation, zoomAnimation], delay: 0.5)
     }
 }
 
