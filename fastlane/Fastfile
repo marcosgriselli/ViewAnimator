@@ -7,11 +7,7 @@ platform :ios do
   end
 
   lane :test do
-    scan(
-      workspace: "./Example/ViewAnimator.xcworkspace",
-      scheme: "ViewAnimator-Example",
-      device: "iPhone 8"
-    )
+    scan(scheme: "ViewAnimator", device: "iPhone 8")
   end
 
   desc "Release a new version with a patch bump_type"
