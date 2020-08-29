@@ -12,5 +12,6 @@ let package = Package(
             name: "ViewAnimator",
             path: "ViewAnimator/Classes"
         )
-    ]
+    ],
+    swiftLanguageVersions: [.v4, .v4_2, .v5]
 )
