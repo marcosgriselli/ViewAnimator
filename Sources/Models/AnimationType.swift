@@ -33,21 +33,6 @@ public enum AnimationType: Animation {
         }
     }
     
-    var reversed: AnimationType {
-        switch self {
-        case .vector(let vector):
-            return .vector(CGVector(dx: -vector.dx, dy: -vector.dy))
-        case .zoom(let scale):
-            // TODO: - Plan correctly
-            return .zoom(scale: scale)
-        case .rotate(let angle):
-            // TODO: - Plan correctly
-            return .rotate(angle: angle)
-        case .identity:
-            return .identity
-        }
-    }
-    
     /// Generates a random Animation.
     ///
     /// - Returns: Newly generated random Animation.
