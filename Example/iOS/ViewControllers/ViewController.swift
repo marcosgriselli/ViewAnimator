@@ -25,7 +25,7 @@ class ViewController: UIViewController {
 
     @IBAction func animate() {
         // Combined animations example
-        let fromAnimation = AnimationType.from(direction: .right, offset: 30.0)
+        let fromAnimation = AnimationType.vector(CGVector(dx: 30, dy: 0))
         let zoomAnimation = AnimationType.zoom(scale: 0.2)
         let rotateAnimation = AnimationType.rotate(angle: CGFloat.pi/6)
         UIView.animate(views: collectionView.visibleCells,
