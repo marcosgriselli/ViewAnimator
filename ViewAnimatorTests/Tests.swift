@@ -20,7 +20,7 @@ class Tests: XCTestCase {
         view.transform = preTransform
         
         let zoom = AnimationType.zoom(scale: 2.5)
-        let translate = AnimationType.from(direction: .bottom, offset: 50)
+        let translate = AnimationType.vector(CGVector(dx: 0, dy: 50))
         
         let animationCompleteExpectation = expectation(description: "Animate with multiple transforms")
         
@@ -36,7 +36,7 @@ class Tests: XCTestCase {
         let view = UIView()
         
         let rotate = AnimationType.rotate(angle: CGFloat.pi)
-        let translate = AnimationType.from(direction: .right, offset: 20)
+        let translate = AnimationType.vector(CGVector(dx: 20, dy: 0))
         let animations = [rotate, translate]
         
         var expectedTransform = view.transform

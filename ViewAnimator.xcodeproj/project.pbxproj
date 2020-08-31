@@ -30,7 +30,6 @@
 		OBJ_36 /* UICollectionView + ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* UICollectionView + ViewAnimator.swift */; };
 		OBJ_37 /* UITableView + ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* UITableView + ViewAnimator.swift */; };
 		OBJ_38 /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* AnimationType.swift */; };
-		OBJ_39 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Direction.swift */; };
 		OBJ_40 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Animation.swift */; };
 		OBJ_41 /* ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* ViewAnimator.swift */; };
 		OBJ_42 /* ViewAnimatorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* ViewAnimatorConfig.swift */; };
@@ -104,7 +103,6 @@
 		FBC9B9C924FAA9C90048483A /* ViewAnimator-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViewAnimator-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* UITableView + ViewAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView + ViewAnimator.swift"; sourceTree = "<group>"; };
 		OBJ_12 /* AnimationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationType.swift; sourceTree = "<group>"; };
-		OBJ_13 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		OBJ_15 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		OBJ_16 /* ViewAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimator.swift; sourceTree = "<group>"; };
 		OBJ_17 /* ViewAnimatorConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimatorConfig.swift; sourceTree = "<group>"; };
@@ -232,7 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_12 /* AnimationType.swift */,
-				OBJ_13 /* Direction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -493,7 +490,6 @@
 				OBJ_36 /* UICollectionView + ViewAnimator.swift in Sources */,
 				OBJ_37 /* UITableView + ViewAnimator.swift in Sources */,
 				OBJ_38 /* AnimationType.swift in Sources */,
-				OBJ_39 /* Direction.swift in Sources */,
 				OBJ_40 /* Animation.swift in Sources */,
 				OBJ_41 /* ViewAnimator.swift in Sources */,
 				OBJ_42 /* ViewAnimatorConfig.swift in Sources */,

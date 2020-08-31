@@ -17,7 +17,7 @@ class CollectionViewController: UIViewController {
     private var items = [Any?]()
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    private let animations = [AnimationType.from(direction: .bottom, offset: 30.0)]
+    private let animations = [AnimationType.vector((CGVector(dx: 0, dy: 30)))]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +47,7 @@ class CollectionViewController: UIViewController {
         collectionView?.reloadData()
         collectionView?.performBatchUpdates({
             UIView.animate(views: self.collectionView!.orderedVisibleCells,
-                animations: animations, completion: {
+                animations: animations, options: [.curveEaseInOut], completion: {
                 sender.isEnabled = true
                 })
         }, completion: nil)
@@ -59,6 +59,7 @@ class CollectionViewController: UIViewController {
                        animations: animations, reversed: true,
                        initialAlpha: 1.0,
                        finalAlpha: 0.0,
+                       options: [.curveEaseIn],
                        completion: {
                         self.collectionView?.reloadData()
                         self.activityIndicator.startAnimating()
