@@ -12,7 +12,7 @@ let package = Package(
             name: "ViewAnimator",
             dependencies: [],
             path: "Sources"
-        )
+        ),
         .testTarget(
             name: "ViewAnimatorTests",
             dependencies: ["ViewAnimator"],
