@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ViewAnimator'
-  s.version          = '3.0.1'
+  s.version          = '3.0.2'
   s.summary          = 'ViewAnimator brings your UI to life with just one line of code.'
 
   s.description      = <<-DESC
