@@ -167,7 +167,7 @@ GEM
     httpclient (2.8.3)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
-    jmespath (1.4.0)
+    jmespath (1.6.1)
     json (2.3.1)
     jwt (2.2.2)
     memoist (0.16.2)
