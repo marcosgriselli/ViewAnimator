@@ -97,7 +97,67 @@ public extension UIView {
             completion?()
         }
     }
-    
+    /**
+     An extension on UIView that provides a convenient method for animating keyframes with multiple animations.
+
+     - Parameters:
+       - animations: An array of `Animation` objects representing the transformations to be applied in each keyframe.
+       - initialAlpha: The initial alpha value of the view before the animation starts. Default is 1.0.
+       - finalAlpha: The final alpha value of the view after the animation completes. Default is 1.0.
+       - delay: The delay before the animation starts, in seconds. Default is 0.
+       - duration: The total duration of the animation. Default is the value specified in `ViewAnimatorConfig.duration`.
+       - options: Additional options for the keyframe animation. Default is an empty set.
+       - completion: A closure to be executed after the animation finishes. Default is `nil`.
+
+     The `animateKeyFrames` method animates a series of keyframes, each defined by an `Animation` object.
+      The view's properties, such as transform and alpha, are animated over the specified duration and delay.
+
+     Example usage:
+
+     ```swift
+     let angle: CGFloat = .pi / 8
+     let animatins: [Animation] = [
+         AnimationType.rotate(angle: -angle),
+         AnimationType.rotate(angle: angle),
+         AnimationType.rotate(angle: -angle),
+         AnimationType.rotate(angle: angle),
+         AnimationType.rotate(angle: 0)
+     ]
+
+     view.animateKeyFrames(animations: animations, initialAlpha: 0.5, finalAlpha: 1.0, delay: 0.2, duration: 2.0) {
+         // Completion handler
+         print("Animation completed!")
+     }
+     */
+    func animateKeyFrames(animations: [Animation],
+                          initialAlpha: CGFloat = 1.0,
+                          finalAlpha: CGFloat = 1.0,
+                          delay: Double = 0,
+                          duration: TimeInterval = ViewAnimatorConfig.duration,
+                          options: UIView.KeyframeAnimationOptions = [],
+                          completion: (() -> Void)? = nil) {
+        let numberOfFrames: Int = animations.count
+        let singleFrameDuration: Double = Double(1/Double(numberOfFrames))
+        //
+        alpha = initialAlpha
+        UIView.animateKeyframes(withDuration: duration + singleFrameDuration, delay: delay, options: options) { [weak self] in
+            for index in 0..<numberOfFrames {
+                let animation = animations[index]
+                let frameDurationStartTime = index == 0 ? 0.0 : Double(singleFrameDuration) * Double(index)
+                //
+                UIView.addKeyframe(withRelativeStartTime: frameDurationStartTime, relativeDuration: singleFrameDuration) {
+                    self?.transform = animation.initialTransform
+                    self?.alpha = initialAlpha == 1.0 ? 1 : frameDurationStartTime
+                }
+            }
+            //
+            UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0) {
+                self?.transform = .identity
+                self?.alpha = finalAlpha
+
+            }
+        }
+    }
     // MARK: - UIView Array
     
     /// Animates multiples views with cascading effect using the UIView.animateWithDuration API
