@@ -138,8 +138,9 @@ public extension UIView {
                           completion: (() -> Void)? = nil) {
         let numberOfFrames: Int = animations.count
         let singleFrameDuration: Double = Double(1/Double(numberOfFrames))
-        //
+        
         alpha = initialAlpha
+        
         UIView.animateKeyframes(withDuration: duration, delay: delay, options: options) { [weak self] in
             // iterates over each keyframe specified in the animations array.
             for index in 0..<numberOfFrames {
@@ -147,14 +148,14 @@ public extension UIView {
                 // calculates the relative start time for the current keyframe
                 // This ensures that each keyframe starts at the appropriate time in the overall animation sequence
                 let frameDurationStartTime = index == 0 ? 0.0 : Double(singleFrameDuration) * Double(index)
-                //
+                
                 UIView.addKeyframe(withRelativeStartTime: frameDurationStartTime, relativeDuration: singleFrameDuration) {
                     self?.transform = animation.initialTransform
                     // if initialAlpha equalts finalAlpha alpha will not animate
                     self?.alpha = initialAlpha == finalAlpha ? finalAlpha : frameDurationStartTime
                 }
             }
-            //
+            
             UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0) {
                 self?.transform = .identity
                 self?.alpha = finalAlpha
