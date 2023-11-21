@@ -130,7 +130,7 @@ public extension UIView {
      }
      */
     func animateKeyFrames(animations: [Animation],
-                          initialAlpha: CGFloat = 1.0,
+                          initialAlpha: CGFloat = 0.0,
                           finalAlpha: CGFloat = 1.0,
                           delay: Double = 0,
                           duration: TimeInterval = ViewAnimatorConfig.duration,
@@ -140,14 +140,18 @@ public extension UIView {
         let singleFrameDuration: Double = Double(1/Double(numberOfFrames))
         //
         alpha = initialAlpha
-        UIView.animateKeyframes(withDuration: duration + singleFrameDuration, delay: delay, options: options) { [weak self] in
+        UIView.animateKeyframes(withDuration: duration, delay: delay, options: options) { [weak self] in
+            // iterates over each keyframe specified in the animations array.
             for index in 0..<numberOfFrames {
                 let animation = animations[index]
+                // calculates the relative start time for the current keyframe
+                // This ensures that each keyframe starts at the appropriate time in the overall animation sequence
                 let frameDurationStartTime = index == 0 ? 0.0 : Double(singleFrameDuration) * Double(index)
                 //
                 UIView.addKeyframe(withRelativeStartTime: frameDurationStartTime, relativeDuration: singleFrameDuration) {
                     self?.transform = animation.initialTransform
-                    self?.alpha = initialAlpha == 1.0 ? 1 : frameDurationStartTime
+                    // if initialAlpha equalts finalAlpha alpha will not animate
+                    self?.alpha = initialAlpha == finalAlpha ? finalAlpha : frameDurationStartTime
                 }
             }
             //
