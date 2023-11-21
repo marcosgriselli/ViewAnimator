@@ -161,6 +161,8 @@ public extension UIView {
                 self?.alpha = finalAlpha
 
             }
+        } completion: { _ in
+            completion()
         }
     }
     // MARK: - UIView Array
