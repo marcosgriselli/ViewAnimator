@@ -149,10 +149,13 @@ public extension UIView {
                 // This ensures that each keyframe starts at the appropriate time in the overall animation sequence
                 let frameDurationStartTime = index == 0 ? 0.0 : Double(singleFrameDuration) * Double(index)
                 
+                // calculates the alpha value for the current keyframe
+                let frameAlphaValue = initialAlpha + ((finalAlpha - initialAlpha) * CGFloat(frameDurationStartTime))
+                
                 UIView.addKeyframe(withRelativeStartTime: frameDurationStartTime, relativeDuration: singleFrameDuration) {
                     self?.transform = animation.initialTransform
                     // if initialAlpha equalts finalAlpha alpha will not animate
-                    self?.alpha = initialAlpha == finalAlpha ? finalAlpha : frameDurationStartTime
+                    self?.alpha = frameAlphaValue
                 }
             }
             
@@ -162,7 +165,7 @@ public extension UIView {
 
             }
         } completion: { _ in
-            completion()
+            completion?()
         }
     }
     // MARK: - UIView Array
